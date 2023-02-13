@@ -130,7 +130,7 @@ After Installing Google Chrome set it as default browser.
 
 ### Usage
 <!----------------Please add the new link ------------------->
-To run the project, click [My-Portfolio](https://github.com/Ali-0111/Microverse_Portfolio.git)
+To run the project, click [Capstone-1](https://github.com/Ali-0111/Microverse_Portfolio.git)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -140,8 +140,8 @@ To run the project, click [My-Portfolio](https://github.com/Ali-0111/Microverse_
 
 👤 **Qurban Ali Safari**
 
-- GitHub: [@githubhandle](https://github.com/Ali-0111)
-- Twitter: [@twitterhandle](https://twitter.com/qurban_safari)
+- GitHub: [@safari](https://github.com/Ali-0111)
+- Twitter: [@safari](https://twitter.com/qurban_safari)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/ali-safari-695214202/)
 
 <!-- FUTURE FEATURES -->

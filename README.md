@@ -177,8 +177,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> I appreciate 
-- [Cindy Shin](https://www.behance.net/adagio07)  for creating the design of the page.
+> I appreciate [Cindy Shin](https://www.behance.net/adagio07)  for creating the design of the page.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

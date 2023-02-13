@@ -185,7 +185,6 @@ Feel free to check the [issues page](../../issues/).
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
-
-The design credit is for <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://www.behance.net/adagio07">Cindy Shin</a>.
+This work is licensed by <a rel="license" href="https://www.behance.net/adagio07">Cindy Shin</a>.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

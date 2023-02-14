@@ -1,5 +1,61 @@
+/* Adding lato font  */
+@font-face {
+  font-family: "Lato";
+  src: url("./latoFonts/Lato-BlackItalic.ttf");
+}
+
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.part1 {
+  min-height: 100vh;
+  border: 2px solid red;
+  background: url("./img/landing-page.jpg") center no-repeat;
+}
+
+.main-head {
+  height: 10vh;
+  width: 95%;
+  margin: auto;
+}
+
+span {
+  background: black;
+  padding: 0.4rem 2rem;
+  margin: 0.6rem;
+  display: block;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.text {
+  width: 95%;
+  margin: auto;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  color: red;
+}
+
+.text h3 {
+  font-size: 3rem;
+}
+
+.text h1 {
+  font-size: 5.5rem;
+}
+
+.details {
+  width: 100%;
+  color: black; 
+  font-size: 1.5rem;
+  padding: 2rem;
 }

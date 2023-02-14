@@ -18,23 +18,22 @@
   box-sizing: border-box;
 }
 
-
 html {
   font-size: 62.5%;
 }
 
 body {
   font-family: "Lato-l", sans-serif;
-  --orange : #ec5242;
+
+  --orange: #ec5242;
 }
 
- .home {
+.home {
   min-height: 90vh;
   border: 2px solid red;
-
   background:
-  linear-gradient(#272a31, transparent),
-  url("./img/landing-page.jpg") center no-repeat;
+    linear-gradient(#272a31, transparent),
+    url("./img/landing-page.jpg") center no-repeat;
 }
 
 .main-head {
@@ -68,17 +67,16 @@ span {
 
 .text-bg {
   background: url('./img/bg.jpg') no-repeat center /cover;
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 4rem;
   font-family: "Lato", sans-serif;
-
 }
 
 .details {
   width: 100%;
   font-size: 1.6rem;
-  text-justify: center;
+  text-justify: auto;
   color: white;
 }
 

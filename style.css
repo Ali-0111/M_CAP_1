@@ -1,35 +1,50 @@
 /* Adding lato font  */
 @font-face {
   font-family: "Lato";
-  src: url("./latoFonts/Lato-BlackItalic.ttf");
+  src: url("./latoFonts/Lato-Black.ttf");
+}
+
+@font-face {
+  font-family: "Lato-l";
+  src: url("./latoFonts/Lato-Light.ttf");
+}
+
+@font-face {
+  font-family: "Lato-l";
+  src: url("./latoFonts/Lato-Regular.ttf");
 }
 
 * {
   box-sizing: border-box;
 }
 
+
 html {
   font-size: 62.5%;
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato-l", sans-serif;
+  --orange : #ec5242;
 }
 
-.part1 {
-  min-height: 100vh;
+ .home {
+  min-height: 90vh;
   border: 2px solid red;
-  background: url("./img/landing-page.jpg") center no-repeat;
+
+  background:
+  linear-gradient(#272a31, transparent),
+  url("./img/landing-page.jpg") center no-repeat;
 }
 
 .main-head {
-  height: 10vh;
+  height: 10%;
   width: 95%;
   margin: auto;
 }
 
 span {
-  background: black;
+  background: white;
   padding: 0.4rem 2rem;
   margin: 0.6rem;
   display: block;
@@ -42,20 +57,40 @@ span {
   margin: auto;
   padding-top: 4rem;
   padding-bottom: 2rem;
-  color: red;
+  color: white;
 }
 
 .text h3 {
   font-size: 3rem;
+  line-height: 1.75rem;
+  color: var(--orange);
 }
 
-.text h1 {
-  font-size: 5.5rem;
+.text-bg {
+  background: url('./img/bg.jpg') no-repeat center /cover;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4rem;
+  font-family: "Lato", sans-serif;
+
 }
 
 .details {
   width: 100%;
-  color: black; 
-  font-size: 1.5rem;
-  padding: 2rem;
+  font-size: 1.6rem;
+  text-justify: center;
+  color: white;
+}
+
+.year {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.end {
+  font-size: 1.8rem;
+}
+
+.about {
+  min-height: 100vh;
 }

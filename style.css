@@ -184,7 +184,9 @@ span {
   width: 1rem;
 }
 
+ /*               adding thickness to chevron icon            */
 .p path {
   stroke: var(--orange);;
   stroke-width: 2px;
 }
+

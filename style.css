@@ -147,9 +147,7 @@ span {
 
 .end-btn {
   width: 70%;
-  margin: 2rem auto;
   background-color: var(--orange);
-  padding: 4rem 8rem;
   font-size: 2rem;
 }
 

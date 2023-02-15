@@ -169,7 +169,7 @@ span {
 
 .img2 {
   width: 95%;
-  height: 95%;
+  height: 90%;
 }
 
 .speaker-underline {
@@ -182,4 +182,9 @@ span {
   background-color: var(--bg);
   padding: 0.1rem 2rem;
   width: 1rem;
+}
+
+.p path {
+  stroke: var(--orange);;
+  stroke-width: 2px;
 }

@@ -48,7 +48,7 @@ ul {
 
 span {
   background: white;
-  padding: 0.4rem 2rem;
+  padding: 0.2rem 2rem;
   margin: 0.6rem;
   display: block;
   cursor: pointer;
@@ -188,3 +188,38 @@ span {
   stroke-width: 2px;
 }
 
+/* ******************** popup section *************/
+
+.popup {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-color: rgba(211, 211, 211,0.8);
+  z-index: 5;
+}
+
+.popup-content {
+  height: 100%;
+  width: 65%;
+  margin-right: auto;
+  background-color: rgb(39, 42, 49);
+}
+
+.humberger2 {
+  margin: 1rem;
+}
+
+.span-1 {
+  transform: rotate(-38deg) translate(-1rem, 0.5rem);
+  width: 1.6rem;
+}
+
+.span-2 {
+  transform: rotate(38deg) translate(-1rem, -0.5rem);
+}
+
+.hide,
+.no-display {
+  opacity: 0;
+}

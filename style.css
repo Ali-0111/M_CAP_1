@@ -94,7 +94,7 @@ span {
 }
 
 .about {
-  height: 100vh;
+  min-height: 100vh;
   background:
     url('./img/programs.jpg') no-repeat center / cover,
     linear-gradient(var(--bg), transparent);
@@ -122,7 +122,6 @@ span {
 
 .row {
   background-color: #383b4277;
-  height: fit-content;
 }
 
 .card-icon {
@@ -148,8 +147,39 @@ span {
 
 .end-btn {
   width: 70%;
-  margin: auto;
+  margin: 2rem auto;
   background-color: var(--orange);
   padding: 4rem 8rem;
   font-size: 2rem;
+}
+
+.profile {
+  width: 40%;
+}
+
+.idea {
+  width: 60%;
+  color: #4c4c4c;
+}
+
+.img1 {
+  height: 9rem;
+  width: 9rem;
+}
+
+.img2 {
+  width: 95%;
+  height: 95%;
+}
+
+.speaker-underline {
+  background-color: var(--orange);
+  width: 3rem;
+  padding: 0.1rem 3rem;
+}
+
+.space {
+  background-color: var(--bg);
+  padding: 0.1rem 2rem;
+  width: 1rem;
 }

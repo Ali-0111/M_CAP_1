@@ -157,6 +157,6 @@ humberger.onclick = () => {
   createSection();
 };
 
-//window.onload = () => {
-  //createSpeaker();
-//};
+// window.onload = () => {
+// createSpeaker();
+// };

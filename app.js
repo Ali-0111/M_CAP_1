@@ -106,7 +106,7 @@ function collpase() {
   const div = document.createElement('div');
   div.classList = 'collapse';
   div.id = 'collapseExample';
-  for (let i = 2; i < data.length; i + 1) {
+  for (let i = 2; i < data.length; i += 1) {
     const li = document.createElement('li');
     li.classList = 'd-flex my-4';
     li.innerHTML = `
@@ -129,7 +129,7 @@ function collpase() {
 }
 
 function createSpeaker() {
-  for (let i = 0; i < 2; i + 1) {
+  for (let i = 0; i < 2; i+=1) {
     const li = document.createElement('li');
     li.classList = 'd-flex my-4';
     li.innerHTML = `
@@ -157,6 +157,6 @@ humberger.onclick = () => {
   createSection();
 };
 
-// window.onload = () => {
-// createSpeaker();
-// };
+window.onload = () => {
+createSpeaker();
+};

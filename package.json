@@ -1,8 +1,8 @@
 {
   "name": "travelly-project",
   "version": "1.0.0",
-  "description": "capstone project for Module-1 : Microverse",
-  "main": "index.js",
+  "description": "<a name=\"readme-top\"></a>\r # 📗 Table of Contents",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -27,5 +27,8 @@
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.21.0"
+  },
+  "dependencies": {
+    "stylelint-config-twbs-bootstrap": "^7.0.0"
   }
 }

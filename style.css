@@ -100,6 +100,7 @@ span {
     url('./img/programs.jpg') no-repeat center / cover,
     linear-gradient(var(--bg), transparent);
   color: white;
+  padding-top: 2rem;
 }
 
 .about-head {
@@ -306,7 +307,8 @@ span {
     text-decoration: none;
     color: white;
   }
-  li:hover {
+  .navs li:hover,
+  nav li:hover {
     transform: scale(1.2);
   }
 
@@ -346,5 +348,19 @@ span {
 
   .details {
     width: 60%;
+  }
+
+  .about {
+    padding-top: 4rem;
+  }
+
+  .cards li:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .end-btn:hover {
+    transform: scale(1.02);
   }
  }

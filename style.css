@@ -262,10 +262,12 @@ span {
 
 .partners {
   background-color: var(--gray);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .w-30 {
-  width: 30%;
+  width: 20rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
@@ -275,7 +277,7 @@ span {
 }
 
 .footer-logo {
-  width: 30rem;
+  width: 70%;
 }
 
 .hide-mob {
@@ -389,5 +391,16 @@ span {
   .sz {
     width: 45%;
     height: 50%;
+  }
+
+  .partners {
+    flex-direction: column;
+    padding: 5rem;
+  }
+
+  .w-30 {
+    width: 10rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }

@@ -129,7 +129,7 @@ function collpase() {
 }
 
 function createSpeaker() {
-  for (let i = 0; i < 2; i+=1) {
+  for (let i = 0; i < 2; i += 1) {
     const li = document.createElement('li');
     li.classList = 'd-flex my-4';
     li.innerHTML = `
@@ -158,5 +158,5 @@ humberger.onclick = () => {
 };
 
 window.onload = () => {
-createSpeaker();
+  createSpeaker();
 };

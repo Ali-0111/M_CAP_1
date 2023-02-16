@@ -281,17 +281,18 @@ span {
 .hide-mob {
   display: none;
 }
- /* Media query  */
 
- @media screen and (min-width: 768px ){
+/* Media query  */
+
+@media screen and (min-width: 768px) {
   .hide-mob {
-    display:flex;
+    display: flex;
   }
 
   .hide-desk {
     display: none;
   }
-  
+
   .main-head {
     margin: 0;
   }
@@ -302,19 +303,22 @@ span {
     padding: 0.1rem 10%;
     background-color: rgb(48, 48, 48);
   }
-  
-  a {
-    text-decoration: none;
-    color: white;
-  }
-  .navs li:hover,
-  nav li:hover {
-    transform: scale(1.2);
-  }
 
   li:active {
     border-bottom: 2px solid var(--orange);
   }
+
+  nav li:hover,
+  .navs li:hover {
+    transform: scale(1.2);
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+
 
   .navs {
     height: 8rem;
@@ -335,7 +339,7 @@ span {
 
   .text {
     width: 80%;
-    padding: 0.1 20%;
+    padding: 0.1rem 20%;
   }
 
   .text h3 {
@@ -363,4 +367,4 @@ span {
   .end-btn:hover {
     transform: scale(1.02);
   }
- }
+}

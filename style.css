@@ -24,6 +24,7 @@ html {
 
 body {
   font-family: "Lato-l", sans-serif;
+
   --orange: #ec5242;
   --gray: #272a31;
   --bg: #d3d3d3;
@@ -188,9 +189,9 @@ span {
   width: 1rem;
 }
 
- /*               adding thickness to chevron icon            */
+/*               adding thickness to chevron icon            */
 .p path {
-  stroke: var(--orange);;
+  stroke: var(--orange);
   stroke-width: 2px;
 }
 
@@ -201,7 +202,7 @@ span {
   height: 100vh;
   position: fixed;
   top: 0;
-  background-color: rgba(211, 211, 211,0.8);
+  background-color: rgba(211, 211, 211, 0.8);
   z-index: 5;
 }
 
@@ -274,11 +275,10 @@ span {
   margin-right: 0.5rem;
 }
 
-.w-30 img{
+.w-30 img {
   width: 100%;
 }
 
 .footer-logo {
   width: 30rem;
 }
-

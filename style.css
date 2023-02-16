@@ -42,12 +42,6 @@ ul {
     url("./img/landing-page.jpg") center no-repeat;
 }
 
-.main-head {
-  height: 10%;
-  width: 95%;
-  margin: auto;
-}
-
 span {
   background: white;
   padding: 0.2rem 2rem;
@@ -296,26 +290,45 @@ span {
   .hide-desk {
     display: none;
   }
+  
   .main-head {
+    margin: 0;
+  }
+
+  nav,
+  .navs {
     width: 100%;
     padding: 0.1rem 10%;
-    background-color: var(--bg);
+    background-color: rgb(48, 48, 48);
   }
   
   a {
     text-decoration: none;
     color: white;
   }
-
-  li {
-    padding-bottom: 1px;
-  }
-  
   li:hover {
     transform: scale(1.2);
   }
 
   li:active {
     border-bottom: 2px solid var(--orange);
+  }
+
+  .navs {
+    height: 8rem;
+    border: 2px solid green;
+  }
+
+  .navs img:hover {
+    transform: scale(1.1);
+  }
+
+  .logo-head {
+    width: 10rem;
+  }
+
+  .linklist a {
+    color: #272a31;
+    font-size: 2rem;
   }
  }

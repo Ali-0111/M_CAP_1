@@ -254,7 +254,6 @@ span {
   color: var(--orange);
 }
 
-
 /* *******************  about page **********/
 .layer {
   background-color: rgba(109, 27, 18, 0.6);
@@ -289,11 +288,12 @@ span {
 }
 
 .people {
-  display: flex; 
+  display: flex;
   flex-direction: column;
-  margin-top: 2 ;
+  margin-top: 2rem;
   justify-content: center;
 }
+
 /* Media query  */
 
 @media screen and (min-width: 768px) {
@@ -349,7 +349,7 @@ span {
 
   .text {
     width: 80%;
-    padding: 8rem auto;
+    padding: 8rem 0.1rem;
   }
 
   .text h3 {

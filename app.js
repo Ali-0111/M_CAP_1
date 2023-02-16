@@ -37,13 +37,13 @@ const data = [
     picture: './img/profiles/person6.jpeg',
     pattern: './img/chess.jpg',
   },
-  { 
+  {
     name: 'Wayne Koff',
     position: 'CEO, Human Immunome Project, Harvard T.H.',
     idea: 'Wayne Koff, PhD, is the founding president and CEO of the Human Immunome Project.AIDS Vaccine Initiative (IAVI)”',
     picture: './img/profiles/WayneKoff.jpg',
     pattern: './img/chess.jpg',
-  }
+  },
 ];
 
 //      ------------  functions   -----------

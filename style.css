@@ -1,0 +1,406 @@
+/* Adding lato font  */
+@font-face {
+  font-family: "Lato";
+  src: url("./latoFonts/Lato-Black.ttf");
+}
+
+@font-face {
+  font-family: "Lato-l";
+  src: url("./latoFonts/Lato-Light.ttf");
+}
+
+@font-face {
+  font-family: "Lato-l";
+  src: url("./latoFonts/Lato-Regular.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato-l", sans-serif;
+
+  --orange: #ec5242;
+  --gray: #272a31;
+  --bg: #d3d3d3;
+}
+
+ul {
+  list-style: none;
+}
+
+.home,
+.intro {
+  min-height: 90vh;
+  background:
+    linear-gradient(var(--gray), transparent),
+    url("./img/landing-page.jpg") center no-repeat;
+}
+
+span {
+  background: white;
+  padding: 0.2rem 2rem;
+  margin: 0.6rem;
+  display: block;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.text {
+  width: 95%;
+  margin: auto;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  color: white;
+}
+
+.text h3 {
+  font-size: 2.5rem;
+  line-height: 1.75rem;
+  color: var(--orange);
+}
+
+.normal {
+  color: var(--orange);
+  font-size: 4rem;
+}
+
+.text-bg {
+  background: url('./img/redbg.png') no-repeat center /cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4.5rem;
+  font-family: "Lato", sans-serif;
+}
+
+.details {
+  width: 100%;
+  font-size: 1.6rem;
+  text-justify: auto;
+  color: white;
+}
+
+.year {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.end {
+  font-size: 1.8rem;
+}
+
+.about {
+  min-height: 100vh;
+  background:
+    url('./img/programs.jpg') no-repeat center / cover,
+    linear-gradient(var(--bg), transparent);
+  color: white;
+  padding-top: 2rem;
+}
+
+.about-head {
+  height: 10%;
+  text-align: center;
+}
+
+.about-head h2 {
+  font-size: 3rem;
+  width: fit-content;
+  margin: auto;
+  color: white;
+}
+
+.underline {
+  padding: 0.1rem 3rem;
+  width: 3rem;
+  background: var(--orange);
+  margin: auto;
+}
+
+.row {
+  background-color: #383b4277;
+}
+
+.card-icon {
+  border: green 2px solid;
+  background: #27394e;
+}
+
+.card-img {
+  width: 3rem;
+  height: 4rem;
+}
+
+.titlePic {
+  color: var(--orange);
+  font-family: "Loto", sans-serif;
+  justify-self: flex-start;
+  margin-left: 2rem;
+}
+
+.texts {
+  padding-left: 2rem;
+}
+
+.end-btn {
+  width: 70%;
+  background-color: var(--orange);
+  font-size: 2rem;
+}
+
+.profile {
+  width: 40%;
+}
+
+.idea {
+  width: 60%;
+  color: #4c4c4c;
+}
+
+.img1 {
+  height: 9rem;
+  width: 9rem;
+}
+
+.img2 {
+  width: 95%;
+  height: 90%;
+}
+
+.speaker-underline {
+  background-color: var(--orange);
+  width: 3rem;
+  padding: 0.1rem 3rem;
+}
+
+.space {
+  background-color: var(--bg);
+  padding: 0.1rem 2rem;
+  width: 1rem;
+}
+
+/*               adding thickness to chevron icon            */
+.p path {
+  stroke: var(--orange);
+  stroke-width: 2px;
+}
+
+/* ******************** popup section *************/
+
+.popup {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-color: rgba(211, 211, 211, 0.8);
+  z-index: 5;
+}
+
+.popup-content {
+  height: 100%;
+  width: 65%;
+  margin-right: auto;
+  background-color: rgb(39, 42, 49);
+}
+
+.humberger2 {
+  margin: 1rem;
+}
+
+.span-1 {
+  transform: rotate(-38deg) translate(-1rem, 0.5rem);
+  width: 1.6rem;
+}
+
+.span-2 {
+  transform: rotate(38deg) translate(-1rem, -0.5rem);
+}
+
+.hide,
+.no-display {
+  opacity: 0;
+}
+
+.links {
+  width: 90%;
+  margin: auto;
+  padding-top: 3rem;
+}
+
+.links ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.links li {
+  margin: 2rem 0;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  font-size: 4rem;
+  padding: 1rem;
+}
+
+.links a:hover {
+  background-color: var(--bg);
+  color: var(--orange);
+}
+
+/* *******************  about page **********/
+.layer {
+  background-color: rgba(109, 27, 18, 0.6);
+}
+
+.partners {
+  background-color: var(--gray);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.w-30 {
+  width: 20rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.w-30 img {
+  width: 100%;
+}
+
+.footer-logo {
+  width: 70%;
+}
+
+.hide-mob {
+  display: none;
+}
+
+.grid-speakers {
+  display: none;
+}
+
+.people {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+/* Media query  */
+
+@media screen and (min-width: 768px) {
+  .hide-mob {
+    display: flex;
+  }
+
+  .hide-desk {
+    display: none;
+  }
+
+  .main-head {
+    margin: 0;
+  }
+
+  nav,
+  .navs {
+    width: 100%;
+    padding: 0.1rem 10%;
+    background-color: rgb(48, 48, 48);
+  }
+
+  li:active {
+    border-bottom: 2px solid var(--orange);
+  }
+
+  nav li:hover,
+  .navs li:hover {
+    transform: scale(1.2);
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .navs {
+    height: 8rem;
+  }
+
+  .navs img:hover {
+    transform: scale(1.1);
+  }
+
+  .logo-head {
+    width: 6rem;
+  }
+
+  .linklist a {
+    color: #272a31;
+    font-size: 2rem;
+  }
+
+  .text {
+    width: 80%;
+    padding: 8rem 0.1rem;
+  }
+
+  .text h3 {
+    font-size: 5rem;
+  }
+
+  .text-bg {
+    font-size: 7rem;
+  }
+
+  .details {
+    width: 60%;
+  }
+
+  .about {
+    padding-top: 4rem;
+  }
+
+  .cards li:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .end-btn:hover {
+    transform: scale(1.02);
+  }
+
+  .grid-speakers {
+    display: flex;
+  }
+
+  .people {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .sz {
+    width: 45%;
+    height: 50%;
+  }
+
+  .partners {
+    flex-direction: column;
+    padding: 5rem;
+  }
+
+  .w-30 {
+    width: 10rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}

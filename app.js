@@ -37,6 +37,13 @@ const data = [
     picture: './img/profiles/person6.jpeg',
     pattern: './img/chess.jpg',
   },
+  { 
+    name: 'Wayne Koff',
+    position: 'CEO, Human Immunome Project, Harvard T.H.',
+    idea: 'Wayne Koff, PhD, is the founding president and CEO of the Human Immunome Project.AIDS Vaccine Initiative (IAVI)”',
+    picture: './img/profiles/WayneKoff.jpg',
+    pattern: './img/chess.jpg',
+  }
 ];
 
 //      ------------  functions   -----------
@@ -51,7 +58,7 @@ function remove(o) {
 // ------------- function for creatine Chevtron btn --------------
 function createChevronBtn() {
   const btn = document.createElement('div');
-  btn.classList = 'w-100';
+  btn.classList = 'w-100 hide-desk';
   btn.innerHTML = `
           <button class="d-flex border bg-white w-100 py-3 my-3 fs-2 justify-content-center"
                       type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"
@@ -104,7 +111,7 @@ function createSection() {
 
 function collpase() {
   const div = document.createElement('div');
-  div.classList = 'collapse';
+  div.classList = 'collapse hide-desk';
   div.id = 'collapseExample';
   for (let i = 2; i < data.length; i += 1) {
     const li = document.createElement('li');
@@ -131,9 +138,9 @@ function collpase() {
 function createSpeaker() {
   for (let i = 0; i < 2; i += 1) {
     const li = document.createElement('li');
-    li.classList = 'd-flex my-4';
+    li.classList = 'd-flex my-4 sz';
     li.innerHTML = `
-    <div class="profile position-relative d-flex justfify-content-center align-items-center">
+    <div class="profile position-relative d-flex">
                         <img class="img1 position-absolute top-0 left-0" src="${data[i].pattern}" alt="chessPattern">
                         <img class="img2 mt-2 ms-3 z-3" src="${data[i].picture}" alt="person2">
                     </div>
@@ -152,6 +159,27 @@ function createSpeaker() {
   collpase();
 }
 
+function speackersDesk() {
+  for (let i = 2; i < data.length; i += 1) {
+    const li = document.createElement('li');
+    li.classList = 'grid-speakers my-4 sz';
+    li.innerHTML = `
+      <div class="profile position-relative d-flex">
+                          <img class="img1 position-absolute top-0 left-0" src="${data[i].pattern}" alt="chessPattern">
+                          <img class="img2 mt-2 ms-3 z-3" src="${data[i].picture}" alt="person2">
+                      </div>
+                      <div class="idea ps-5 align-self-center">
+                              <h3 class="display-6 fw-semibold">${data[i].name}</h3>
+                          <p class="text-danger fst-italic fs-5 mb-0">${data[i].position}</p>
+                          <div class="space my-3"></div>
+                          <p class="research fs-4">
+                              ${data[i].idea}
+                          </p>
+                      </div>
+      `;
+    people.append(li);
+  }
+}
 // ---------------------- events -----------------------
 humberger.onclick = () => {
   createSection();
@@ -159,4 +187,5 @@ humberger.onclick = () => {
 
 window.onload = () => {
   createSpeaker();
+  speackersDesk();
 };

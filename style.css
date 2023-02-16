@@ -282,6 +282,16 @@ span {
   display: none;
 }
 
+.grid-speakers {
+  display: none;
+}
+
+.people {
+  display: flex; 
+  flex-direction: column;
+  margin-top: 2 ;
+  justify-content: center;
+}
 /* Media query  */
 
 @media screen and (min-width: 768px) {
@@ -318,8 +328,6 @@ span {
     color: white;
   }
 
-
-
   .navs {
     height: 8rem;
   }
@@ -339,7 +347,7 @@ span {
 
   .text {
     width: 80%;
-    padding: 0.1rem 20%;
+    padding: 8rem auto;
   }
 
   .text h3 {
@@ -366,5 +374,20 @@ span {
 
   .end-btn:hover {
     transform: scale(1.02);
+  }
+
+  .grid-speakers {
+    display: flex;
+  }
+
+  .people {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .sz {
+    width: 45%;
+    height: 50%;
   }
 }

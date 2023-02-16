@@ -282,3 +282,40 @@ span {
 .footer-logo {
   width: 30rem;
 }
+
+.hide-mob {
+  display: none;
+}
+ /* Media query  */
+
+ @media screen and (min-width: 768px ){
+  .hide-mob {
+    display:flex;
+  }
+
+  .hide-desk {
+    display: none;
+  }
+  .main-head {
+    width: 100%;
+    padding: 0.1rem 10%;
+    background-color: var(--bg);
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  li {
+    padding-bottom: 1px;
+  }
+  
+  li:hover {
+    transform: scale(1.2);
+  }
+
+  li:active {
+    border-bottom: 2px solid var(--orange);
+  }
+ }

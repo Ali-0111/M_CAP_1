@@ -33,7 +33,8 @@ ul {
   list-style: none;
 }
 
-.home {
+.home,
+.intro {
   min-height: 90vh;
   background:
     linear-gradient(var(--gray), transparent),
@@ -67,6 +68,11 @@ span {
   font-size: 2.5rem;
   line-height: 1.75rem;
   color: var(--orange);
+}
+
+.normal {
+  color: var(--orange);
+  font-size: 4rem;
 }
 
 .text-bg {
@@ -223,3 +229,56 @@ span {
 .no-display {
   opacity: 0;
 }
+
+.links {
+  width: 90%;
+  margin: auto;
+  padding-top: 3rem;
+}
+
+.links ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.links li {
+  margin: 2rem 0;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  font-size: 4rem;
+  padding: 1rem;
+}
+
+.links a:hover {
+  background-color: var(--bg);
+  color: var(--orange);
+}
+
+
+/* *******************  about page **********/
+.layer {
+  background-color: rgba(109, 27, 18, 0.6);
+}
+
+.partners {
+  background-color: var(--gray);
+}
+
+.w-30 {
+  width: 30%;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.w-30 img{
+  width: 100%;
+}
+
+.footer-logo {
+  width: 30rem;
+}
+

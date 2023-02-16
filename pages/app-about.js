@@ -24,10 +24,10 @@ function createSection() {
     <nav class="links">
     <ul>
         <li>
-          <a href="./pages/about.html">About</a>
+          <a href="../index.html">Home</a>
         </li>
         <li>
-          <a href="#services">Services</a>
+          <a href="#memo">Services</a>
         </li>
     </ul>
     </nav>
@@ -35,13 +35,14 @@ function createSection() {
     section.append(divForPop);
     body.appendChild(section);
     remove(section);
-    // remove by itmes clicked
+    // remove by items click
     const links = document.querySelectorAll('.links li');
     links.forEach((link) => {
         link.addEventListener('click',(e)=>{
             body.removeChild(section);
         })
     });
+    
 };
 
 function remove(o) {
@@ -51,12 +52,11 @@ function remove(o) {
     };
 }
 
-// function arrayEvent(arr, section) {
-//     // Array.from(arr).forEach((link)=> {
-//     //     link.onclick = () => {
-//     //         remove(section);
-//     //     };
-//     // });
-
-//     console.log("insed");
-// }
+function arrayEvent(arr, section) {
+    Array.from(arr).forEach((link)=> {
+        link.onclick = () => {
+            remove(section);
+        console.log('array link');
+        };
+    });
+}

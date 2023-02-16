@@ -316,7 +316,6 @@ span {
 
   .navs {
     height: 8rem;
-    border: 2px solid green;
   }
 
   .navs img:hover {
@@ -324,11 +323,28 @@ span {
   }
 
   .logo-head {
-    width: 10rem;
+    width: 6rem;
   }
 
   .linklist a {
     color: #272a31;
     font-size: 2rem;
+  }
+
+  .text {
+    width: 80%;
+    padding: 0.1 20%;
+  }
+
+  .text h3 {
+    font-size: 5rem;
+  }
+
+  .text-bg {
+    font-size: 7rem;
+  }
+
+  .details {
+    width: 60%;
   }
  }

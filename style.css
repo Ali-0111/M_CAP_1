@@ -76,10 +76,10 @@ span {
 }
 
 .text-bg {
-  background: url('./img/bg.jpg') no-repeat center /cover;
+  background: url('./img/redbg.png') no-repeat center /cover;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 3.7rem;
+  font-size: 4.5rem;
   font-family: "Lato", sans-serif;
 }
 

@@ -130,67 +130,34 @@ function createChevronBtn() {
 // ---------------- function for creatine chevetron collapse menu ---------
 
 function collpase() {
+    // const div = document.createElement('div');
+    // div.classList = 'collapse';
+    // div.id = 'collapseExample';
+   
+    // people.append(div);
     const div = document.createElement('div');
     div.classList = 'collapse';
     div.id = 'collapseExample';
-    for (let i = 2; i< data.length ;i++)
-    div.innerHTML = `
-    
-    <li class="d-flex my-4">
+    for (let i= 2; i < data.length; i++)
+    {
+    const li = document.createElement('li');
+    li.classList = 'd-flex my-4';
+    li.innerHTML = `
     <div class="profile position-relative d-flex justfify-content-center align-items-center">
-        <img class="img1 position-absolute top-0 left-0" src="./img/chess.jpg" alt="chessPattern">
-        <img class="img2 mt-2 ms-3 z-3" src="./img/profiles/person4.jpeg" alt="person4">
-    </div>
-    <div class="idea ps-5 align-self-center">
-            <h3 class="display-6 fw-semibold">
-                Greg De Temmerman
-            </h3>
-        <p class="text-danger fst-italic fs-5 mb-0">
-            Managing Director at Zenon Research. Associate Researcher at Mines Paris Tech/IHEIE
-        </p>
-        <div class="space my-3"></div>
-        <p class="research fs-4">     
-            Leading scientist with a demonstrated history of working in an international and challenging project environment. Author of more than 230 scientific articles
-        </p>
-    </div>
-    </li>
-    <li class="d-flex my-4">
-    <div class="profile position-relative d-flex justfify-content-center align-items-center">
-        <img class="img1 position-absolute top-0 left-0" src="./img/chess.jpg" alt="chessPattern">
-        <img class="img2 mt-2 ms-3 z-3" src="./img/profiles/person5.jpeg" alt="person5">
-    </div>
-    <div class="idea ps-5 align-self-center">
-            <h3 class="display-6 fw-semibold">
-                Ann Mettler
-            </h3>
-        <p class="text-danger fst-italic fs-5 mb-0">
-            Vice President, Europe at Breakthrough Energy
-        </p>
-        <div class="space my-3"></div>
-        <p class="research fs-4">     
-            Ann Mettler is the head of the European Political Strategy Centre (EPSC), the in-house think tank of the European Commission.
-        </p>
-    </div>
-    </li>
-    <li class="d-flex my-4">
-    <div class="profile position-relative d-flex justfify-content-center align-items-center">
-        <img class="img1 position-absolute top-0 left-0" src="./img/chess.jpg" alt="chessPattern">
-        <img class="img2 mt-2 ms-3 z-3" src="./img/profiles/person6.jpeg" alt="person6">
-    </div>
-    <div class="idea ps-5 align-self-center">
-            <h3 class="display-6 fw-semibold">
-                Angeleki Rigos
-            </h3>
-        <p class="text-danger fst-italic fs-5 mb-0">
-            Vice President, Europe at Breakthrough Energy.
-        </p>
-        <div class="space my-3"></div>
-        <p class="research fs-4">     
-            Ann Mettler is the head of the European Political Strategy Centre (EPSC), the in-house think tank of the European Commission. 
-        </p>
-    </div>
-    </li>    
+                        <img class="img1 position-absolute top-0 left-0" src="${data[i].pattern}" alt="chessPattern">
+                        <img class="img2 mt-2 ms-3 z-3" src="${data[i].picture}" alt="person2">
+                    </div>
+                    <div class="idea ps-5 align-self-center">
+                            <h3 class="display-6 fw-semibold">${data[i].name}</h3>
+                        <p class="text-danger fst-italic fs-5 mb-0">${data[i].position}</p>
+                        <div class="space my-3"></div>
+                        <p class="research fs-4">
+                            ${data[i].idea}
+                        </p>
+                    </div>
     `;
+    div.append(li);
+    }
     people.append(div);
 }
 // ---------------------- events -----------------------

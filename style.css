@@ -437,8 +437,21 @@ span {
     transform: scale(1.2);
   }
 
+  .bl {
+    color: #272a31;
+  }
+
   a {
     text-decoration: none;
+    color: white;
+  }
+
+  .linklist a {
+    color: #272a31;
+    font-size: 2rem;
+  }
+
+  nav li:hover a {
     color: white;
   }
 
@@ -452,11 +465,6 @@ span {
 
   .logo-head {
     width: 6rem;
-  }
-
-  .linklist a {
-    color: #272a31;
-    font-size: 2rem;
   }
 
   .text {

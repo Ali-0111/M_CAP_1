@@ -103,6 +103,7 @@
 <!------------------------Pleas update the link -------------->
 
 - [Project:Capstone_1](https://capstone1safari.netlify.app)
+- [Short_Presentation](https://www.loom.com/share/f3c9f2f77a374cadb4fd460c92abf808)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -102,7 +102,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 <!------------------------Pleas update the link -------------->
 
-- [Project:Capstone_1](https://ali-0111.github.io/)
+- [Project:Capstone_1](https://capstone1safari.netlify.app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

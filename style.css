@@ -59,15 +59,29 @@ span {
   color: white;
 }
 
+.text .p-black {
+  color: black;
+  text-align:center;
+  width: 90%;
+  margin: 1rem auto;
+  padding: 1rem 0.5rem;
+  font-size: 1.5rem;
+  border: 1px solid white;
+}
+
 .text h3 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 1.75rem;
   color: var(--orange);
 }
 
 .normal {
   color: var(--orange);
-  font-size: 4rem;
+  font-size: 3rem;
+  padding: 0.5rem; 
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  font-weight: 600;
 }
 
 .text-bg {
@@ -290,6 +304,42 @@ span {
   border-radius: 5px;
 }
 
+.display {
+  font-weight: 600;
+  font-size: 2.5rem;
+  padding-top: 3rem;
+  margin-top: 4rem;
+}
+
+.fs {
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+  margin: 0 2rem;
+}
+
+.logo-pic {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.logsize {
+  width: 14rem;
+}
+
+.mem {
+  margin-top: 5;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mem-h {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
 .partners {
   background-color: var(--gray);
   padding-top: 3rem;
@@ -297,7 +347,8 @@ span {
 }
 
 .w-30 {
-  width: 20rem;
+  width: 15rem;
+  padding: 0 1rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
@@ -329,9 +380,24 @@ span {
   opacity: 0;
 }
 
+.hide-desk2 {
+  display: contents;
+}
+
+.hide-mob2 {
+  display: none;
+}
 /* Media query  */
 
 @media screen and (min-width: 768px) {
+  .hide-mob2 {
+    display: contents;
+  }
+
+  .hide-desk2 {
+    display: none;
+  }
+
   .hide-btn {
     opacity: 1;
     border-bottom: 1px solid white;
@@ -409,6 +475,10 @@ span {
     width: 60%;
   }
 
+  .logo {
+    padding: 3rem 2rem;
+    margin: 3rem;
+  }
   .about {
     padding-top: 4rem;
   }
@@ -472,5 +542,64 @@ span {
     width: 10rem;
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+
+  /* about section media query  */
+  .normal {
+    font-size: 6rem;
+    font-weight: 700;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .text .p-black {
+    width: 60%;
+    padding: 1rem;
+    margin: 3rem auto;
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    margin: 3rem 2rem;
+    margin-bottom: 5rem;
+  }
+
+  .display {
+   margin-top: 4rem;
+  }
+
+  .fs {
+    font-size: 1.5rem;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .logo-pic {
+    width: 50%;
+  }
+
+  .logsize {
+    width: 20rem;
+  }
+
+  .mem {
+    padding: 5rem 0;
+    margin-bottom: 3rem;
+  }
+
+  .grid2 {
+    display: grid;
+    grid-template-columns: repeat(2,45%);
+    column-gap: 2rem;
+    justify-content: center;
+  }
+
+  .partners {
+    padding: 5rem 0;
+  }
+
+  .w-30 {
+    height: 10rem;
+    padding: 3rem 1rem;
   }
 }

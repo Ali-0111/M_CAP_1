@@ -1,0 +1,604 @@
+/* Adding lato font  */
+@font-face {
+  font-family: "Lato";
+  src: url("./latoFonts/Lato-Black.ttf");
+}
+
+@font-face {
+  font-family: "Lato-l";
+  src: url("./latoFonts/Lato-Light.ttf");
+}
+
+@font-face {
+  font-family: "Lato-l";
+  src: url("./latoFonts/Lato-Regular.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato-l", sans-serif;
+
+  --orange: #ec5242;
+  --gray: #272a31;
+  --bg: #d3d3d3;
+}
+
+ul {
+  list-style: none;
+}
+
+.home,
+.intro {
+  min-height: 90vh;
+  background:
+    linear-gradient(var(--gray), transparent),
+    url("./img/landing-page.jpg") center no-repeat;
+}
+
+span {
+  background: white;
+  padding: 0.2rem 2rem;
+  margin: 0.6rem;
+  display: block;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.text {
+  width: 95%;
+  margin: auto;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  color: white;
+}
+
+.text .p-black {
+  color: black;
+  text-align: center;
+  width: 90%;
+  margin: 1rem auto;
+  padding: 1rem 0.5rem;
+  font-size: 1.5rem;
+  border: 1px solid white;
+}
+
+.text h3 {
+  font-size: 2rem;
+  line-height: 1.75rem;
+  color: var(--orange);
+}
+
+.normal {
+  color: var(--orange);
+  font-size: 3rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  font-weight: 600;
+}
+
+.text-bg {
+  background: url('./img/redbg.png') no-repeat center /cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4.5rem;
+  font-family: "Lato", sans-serif;
+}
+
+.details {
+  width: 100%;
+  font-size: 1.6rem;
+  text-justify: auto;
+  color: white;
+}
+
+.year {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.end {
+  font-size: 1.8rem;
+}
+
+.about {
+  min-height: 100vh;
+  background:
+    url('./img/programs.jpg') no-repeat center / cover,
+    linear-gradient(var(--bg), transparent);
+  color: white;
+  padding-top: 2rem;
+}
+
+.about-head {
+  height: 10%;
+  text-align: center;
+}
+
+.about-head h2 {
+  font-size: 3rem;
+  width: fit-content;
+  margin: auto;
+  color: white;
+}
+
+.underline {
+  padding: 0.1rem 3rem;
+  width: 3rem;
+  background: var(--orange);
+  margin: auto;
+}
+
+.card-icon {
+  border: green 2px solid;
+  background: #27394e;
+}
+
+.card-img {
+  width: 3rem;
+  height: 4rem;
+}
+
+.titlePic {
+  color: var(--orange);
+  font-family: "Loto", sans-serif;
+  justify-self: flex-start;
+  margin-left: 2rem;
+}
+
+.texts {
+  padding-left: 2rem;
+}
+
+.end-btn {
+  width: 80%;
+  background-color: var(--orange);
+  font-size: 2rem;
+  padding: 2rem;
+  border: none;
+}
+
+.profile {
+  width: 40%;
+}
+
+.idea {
+  width: 60%;
+  color: #4c4c4c;
+}
+
+.img1 {
+  height: 9rem;
+  width: 9rem;
+}
+
+.img2 {
+  width: 95%;
+  height: 90%;
+}
+
+.z-3 {
+  z-index: 3;
+}
+
+.speaker-underline {
+  background-color: var(--orange);
+  width: 3rem;
+  padding: 0.1rem 3rem;
+}
+
+.space {
+  background-color: var(--bg);
+  padding: 0.1rem 2rem;
+  width: 1rem;
+}
+
+/*               adding thickness to chevron icon            */
+.p path {
+  stroke: var(--orange);
+  stroke-width: 2px;
+}
+
+/* ******************** popup section *************/
+
+.popup {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-color: rgba(211, 211, 211, 0.8);
+  z-index: 5;
+}
+
+.popup-content {
+  height: 100%;
+  width: 65%;
+  margin-right: auto;
+  background-color: rgb(39, 42, 49);
+}
+
+.humberger2 {
+  margin: 1rem;
+}
+
+.span-1 {
+  transform: rotate(-38deg) translate(-1rem, 0.5rem);
+  width: 1.6rem;
+}
+
+.span-2 {
+  transform: rotate(38deg) translate(-1rem, -0.5rem);
+}
+
+.hide,
+.no-display {
+  opacity: 0;
+}
+
+.links {
+  width: 90%;
+  margin: auto;
+  padding-top: 3rem;
+}
+
+.links ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.links li {
+  margin: 2rem 0;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  font-size: 4rem;
+  padding: 1rem;
+}
+
+.links a:hover {
+  background-color: var(--bg);
+  color: var(--orange);
+}
+
+/* *******************  about page **********/
+.layer {
+  background-color: rgba(109, 27, 18, 0.6);
+}
+
+.grid-st {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: #383b4277;
+  margin: 0 2rem 1rem 2rem;
+  padding: 2rem 1rem;
+  border-radius: 4px;
+}
+
+.img {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem 1rem;
+}
+
+.img img {
+  transform: scale(1.5);
+  margin-bottom: 2rem;
+}
+
+.cards li:hover,
+.end-btn:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.display {
+  font-weight: 600;
+  font-size: 2.5rem;
+  padding-top: 3rem;
+  margin-top: 4rem;
+}
+
+.fs {
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+  margin: 0 2rem;
+}
+
+.logo-pic {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.logsize {
+  width: 14rem;
+}
+
+.mem {
+  margin-top: 5rem;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mem-h {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.partners {
+  background-color: var(--gray);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.w-30 {
+  width: 15rem;
+  padding: 0 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.w-30 img {
+  width: 100%;
+}
+
+.footer-logo {
+  width: 70%;
+}
+
+.hide-mob {
+  display: none;
+}
+
+.grid-speakers {
+  display: none;
+}
+
+.people {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.hide-btn {
+  opacity: 0;
+}
+
+.hide-desk2 {
+  display: contents;
+}
+
+.hide-mob2 {
+  display: none;
+}
+
+/* Media query  */
+
+@media screen and (min-width: 768px) {
+  .hide-mob2 {
+    display: contents;
+  }
+
+  .hide-desk2 {
+    display: none;
+  }
+
+  .hide-btn {
+    opacity: 1;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+  }
+
+  .hide-mob {
+    display: flex;
+  }
+
+  .hide-desk {
+    display: none;
+  }
+
+  .main-head {
+    margin: 0;
+  }
+
+  nav,
+  .navs {
+    width: 100%;
+    padding: 0.1rem 10%;
+    background-color: rgb(48, 48, 48);
+  }
+
+  li:active {
+    border-bottom: 2px solid var(--orange);
+  }
+
+  nav li:hover,
+  .navs li:hover {
+    transform: scale(1.2);
+  }
+
+  .bl {
+    color: #272a31;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .linklist a {
+    color: #272a31;
+    font-size: 2rem;
+  }
+
+  nav li:hover a {
+    color: white;
+  }
+
+  .navs {
+    height: 8rem;
+  }
+
+  .navs img:hover {
+    transform: scale(1.1);
+  }
+
+  .logo-head {
+    width: 6rem;
+  }
+
+  .text {
+    width: 80%;
+    padding: 8rem 0.1rem;
+  }
+
+  .text h3 {
+    font-size: 5rem;
+  }
+
+  .text-bg {
+    font-size: 7rem;
+  }
+
+  .details {
+    width: 60%;
+  }
+
+  .logo {
+    padding: 3rem 2rem;
+    margin: 3rem 2rem;
+    margin-bottom: 5rem;
+  }
+
+  .about {
+    padding-top: 4rem;
+  }
+
+  .grid-st {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+  }
+
+  .cards {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .cards li:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .end-btn:hover {
+    transform: scale(1.02);
+  }
+
+  .img {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .texts {
+    margin-top: 5rem;
+    text-align: justify;
+    padding: 0 0.5rem;
+    height: 20rem;
+  }
+
+  .grid-speakers {
+    display: flex;
+  }
+
+  .people {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .sz {
+    width: 45%;
+    height: 50%;
+  }
+
+  .partners {
+    flex-direction: column;
+    padding: 5rem 0;
+  }
+
+  .w-30 {
+    width: 10rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 10rem;
+    padding: 3rem 1rem;
+  }
+
+  /* about section media query  */
+  .normal {
+    font-size: 6rem;
+    font-weight: 700;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .text .p-black {
+    width: 60%;
+    padding: 1rem;
+    margin: 3rem auto;
+    font-size: 1.5rem;
+  }
+
+  .display {
+    margin-top: 4rem;
+  }
+
+  .fs {
+    font-size: 1.5rem;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .logo-pic {
+    width: 50%;
+  }
+
+  .logsize {
+    width: 20rem;
+  }
+
+  .mem {
+    padding: 5rem 0;
+    margin-bottom: 3rem;
+  }
+
+  .grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    column-gap: 2rem;
+    justify-content: center;
+  }
+}

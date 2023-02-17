@@ -172,6 +172,10 @@ span {
   height: 90%;
 }
 
+.z-3 {
+  z-index: 3;
+}
+
 .speaker-underline {
   background-color: var(--orange);
   width: 3rem;

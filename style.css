@@ -122,10 +122,6 @@ span {
   margin: auto;
 }
 
-.row {
-  /* background-color: #383b4277; */
-}
-
 .card-icon {
   border: green 2px solid;
   background: #27394e;
@@ -287,13 +283,6 @@ span {
   margin-bottom: 2rem;
 }
 
-.texts {
-  margin-top: 5rem;
-  text-align: justify;
-  padding: 0 0.5rem;
-  height: 20rem;
-}
-
 .cards li:hover,
 .end-btn:hover {
   transform: scale(1.02);
@@ -339,6 +328,7 @@ span {
 .hide-btn {
   opacity: 0;
 }
+
 /* Media query  */
 
 @media screen and (min-width: 768px) {
@@ -428,10 +418,11 @@ span {
     flex-direction: column;
     margin: 0.5rem;
   }
+
   .cards {
     padding: 3rem;
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
 
   .cards li:hover {
@@ -448,6 +439,13 @@ span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .texts {
+    margin-top: 5rem;
+    text-align: justify;
+    padding: 0 0.5rem;
+    height: 20rem;
   }
 
   .grid-speakers {

@@ -63,7 +63,7 @@ function createChevronBtn() {
           <button class="d-flex border bg-white w-100 py-3 my-3 fs-2 justify-content-center"
                       type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"
                       >
-                          MORE
+                          Expand or Minimize
                           <svg class="p mx-2" width="16" height="28"  fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
                               <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
                           </svg>

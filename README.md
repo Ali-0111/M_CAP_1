@@ -14,7 +14,7 @@
 <img src="./ezgif.com-gif-maker (1).gif" width="100%" />
 > Mobile View:
 <div align="center">
-  <img src="./ezgif.com-gif-maker (2).gif" width="100%" />
+  <img src="./ezgif.com-gif-maker (2).gif" width="50%" />
   <br/>
 </div>
 

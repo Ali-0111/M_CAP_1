@@ -21,39 +21,34 @@
 ## Built With
 
 - Languages: _**HTML, CSS, JavaScript**_
-- Frameworks: _**N/A**_
-- Technologies used: _**GIT, GITHUB, LINTERS**_
+- Frameworks: _**BootStrap**_
+- Technologies used: _**GIT, GITHUB, LINTERS,Netlify**_
 
 ## Additional tools
  - Google fonts
 
 ## Live Demo
 
-[See My project Live here](https://reem-lab.github.io/CapstoneProject/)
-
-## Video of the project description
-
-[Watch from here](https://www.loom.com/share/212aa8b87d534f1caddd07a0fa0a4527)
-
+[See My project Live here](https://ali-0111.github.io/M_CAP_1/index.html)
 
 ## Authors
 
 <!-- Only Change Username for Different Accounts -->
 
-👤 **Reem**
+👤 **Qurban Ali Safari**
 
  Platform | Badge |
  --- | --- |
- **GitHub**  | [@Reem-lab](https://github.com/Reem-lab)
- **Twitter** | [Rem79940127](https://twitter.com/Rem79940127)
- **LinkdIn** | [reem-janina](https://www.linkedin.com/in/reem-janina-ab74ab21a/)
+ **GitHub**  | [Ali-0111](https://github.com/Ali-0111)
+ **Twitter** | [qurban_safari](https://twitter.com/qurban_safari)
+ **LinkdIn** | [Safari](https://www.linkedin.com/in/ali-safari-linked)
 
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/MrRamoun/WEBDEV/issues).
+Feel free to check the [issues page](https://github.com/Ali-0111/M_CAP_1/issues).
 
 ## Show your support
 
@@ -61,10 +56,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- The Original design idea by [Behance](https://www.behance.net/adagio07) in Behance.
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- The Original UI design idea by [Behance](https://www.behance.net/adagio07) in Behance.
 
 ## 📝 License
 

@@ -9,9 +9,9 @@
 # Travelly web site
 
 > This project is Myfirst Capstone project, I created for a travel agency with html,css and javascript techs.
-
 > Desktop View:
 <img src="./ezgif.com-gif-maker (1).gif" width="100%" />
+
 > Mobile View:
 <div align="center">
   <img src="./ezgif.com-gif-maker (2).gif" width="50%" />

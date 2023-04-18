@@ -1,13 +1,18 @@
-<!-- Feel Free to Add, Update, Delete Any Section you find needs so -->
+<a name="readme-top"></a>
+
+<div align="center">
+
+  [![](https://img.shields.io/badge/Microverse-blueviolet)](https://www.microverse.org/?grsf=04r25h)
+  <br/>
+</div>
 
 # Travelly web site
 
 > This project is Myfirst Capstone project, I created for a travel agency with html,css and javascript techs.
 
-> Mobile view:
+> Desktop View:
 <img src="./ezgif.com-gif-maker (1).gif" width="100%" />
-> Desktop view:
-<img src="ezgif.com-gif-maker (2).gif" width="70%" />
+
 
 ## Built With
 

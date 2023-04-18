@@ -12,7 +12,11 @@
 
 > Desktop View:
 <img src="./ezgif.com-gif-maker (1).gif" width="100%" />
-
+> Mobile View:
+<div align="center">
+  <img src="./ezgif.com-gif-maker (2).gif" width="100%" />
+  <br/>
+</div>
 
 ## Built With
 

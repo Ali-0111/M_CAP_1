@@ -4,8 +4,10 @@
 
 > This project is Myfirst Capstone project, I created for a travel agency with html,css and javascript techs.
 
-
-<img src="./ezgif.com-gif-maker (1).gif" width="30%" /><img src="ezgif.com-gif-maker (2).gif" width="70%" />
+> Mobile view:
+<img src="./ezgif.com-gif-maker (1).gif" width="100%" />
+> Desktop view:
+<img src="ezgif.com-gif-maker (2).gif" width="70%" />
 
 ## Built With
 

@@ -8,7 +8,8 @@
 
 # Travelly web site
 
-> This project is Myfirst Capstone project, I created for a travel agency with html,css and javascript techs.
+> This project is Myfirst Capstone project, I created for a travel agency with html,css and javascript.
+
 > Desktop View:
 <img src="./ezgif.com-gif-maker (1).gif" width="100%" />
 

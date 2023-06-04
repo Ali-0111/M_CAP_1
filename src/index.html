@@ -6,91 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- link for tailwindcss stles  -->
     <link rel="stylesheet" href="../dist/output.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-    <link href="https://fonts.googleapis.com/css2?family=Freehand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <!-- link for external css  -->
+    <link rel="stylesheet" href="./style2.css">
+    <!--        Favicon         -->
     <link rel="icon" href="../assests/icons/airplane.svg">
     <title>Travelly | Trustable Wings..</title>
     <meta name="description" content="Have a safe travel with us.">
 </head>
 <body>
-    <div>
-        <p class="border">
-            paragraph for the test
-        </p>
-    </div>
-    <main>
-        <!-- ----------- Home --------  -->
-        <section id ="home" class="home p-0">
-            <header class="main-head w-100">
-                <button class="humberger hide-desk navbar-toggler postion-fixed mt-3 toggler-example " type="button">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <nav>
-                    <ul class="align-items-center hide-mob w-100 social justify-content-end my-1">
-                        <li class="mx-2 p-1">
+    <header class="main-head border-4 border-red-400">
+        <!-- Desktop header starts -->
+        <div class="desktop-header max-md:hidden">
+            <!-- social media links -->   
+            <nav class="social-media bg-custom-gray text-white">
+                <div class="container flex justify-end">
+                    <ul class="social-media-list w-[30%] max-lg:w-[45%] flex justify-between items-center py-2">
+                        <li class="hover:scale-[1.2]">
+                            <a href="#home">
+                                <img src="../assests/icons/facebook.svg" alt="facebook">
+                            </a>
+                        </li>
+                        <li  class="hover:scale-[1.2]">
                             <a href="#">
                                 <img src="../assests/icons/twitter.svg" alt="twitter">
                             </a>
                         </li>
-                        <li class="mx-2 p-1">
-                            <a href="#">
-                                <img src="../assests/icons/facebook.svg" alt="facebook">
-                            </a>
-                        </li>
-                        <li class="mx-2 p-1 fs-4">
-                                <a href="#">
-                                    English
-                                </a>
-                        </li>
-                        <li class="mx-2 p-1 fs-4">
-                           <a href="#" class="text-white">
-                            My Page
-                           </a>
-                        </li>
-                        <li class="mx-2 p-1 fs-4">
-                            <a href="#">
-                                Log out
-                            </a>
-                        </li>
+                        <li><a class="hover:underline" href="#">English</a></li>
+                        <li><a class="hover:underline" href="#">My Page</a></li>  
+                        <li><a class="hover:underline" href="#">Log out</a></li>  
                     </ul>
-                </nav>
-                <div class="d-flex bg-white hide-mob navs align-items-center justify-content-center">
-                    <div class="flex-grow-1 hide-mob py-2 logo-head  text-start">
-                        <a class="d-flex" href="#">
-                            <img class=" justify-content-start logo-head"src="../assests/img/logo/travelly.png" alt="">
-                            
-                        </a>
-                    </div>
-                    <div class="flex-grow-1 hide-mob linklist  justify-self-end">
-                        <ul class="w-100 d-flex pt-2 justify-content-around align-items-center">
-                            <li>
-                                <a href="./pages/about.html">About</a>
-                            </li>
-                            <li>
-                                <a href="#">Program</a>
-                            </li>
-                            <li>
-                                <a href="#">Join</a>
-                            </li>
-                            <li>
-                                <a href="#">Sponsor</a>
-                            </li>
-                            <li>
-                                <a href="#">News</a>
-                            </li>
-                            <li>
-                                <a href="#">Tickets</a>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
-            </header>
+            </nav>
+        <!-- social media links ends  -->
+        <!-- Page Navigation links starts -->
+            <nav class="nav-items py-2">
+                <div class="container">
+                    <ul class="flex justify-between items-center">
+                        <li class="w-[30%]">
+                            <a href="#home">
+                                <img class="w-14"src="../assests/img/logo/travelly.png" alt="logo">
+                            </a>
+                        </li>
+                        <li class="hover:text-red-600"><a href="./pages/about.html">About</a></li>
+                        <li class="hover:text-red-600"><a href="#">Program</a></li>
+                        <li class="hover:text-red-600"><a href="#">Join</a></li>
+                        <li class="hover:text-red-600"><a href="#">Sponsor</a></li>
+                        <li class="hover:text-red-600"><a href="#">News</a></li>
+                        <li class="border-[3px] border-custom-orange py-2 px-6"><a href="#">Tickets</a></li>
+                    </ul>
+                </div>
+            </nav>     
+        </div>
+        <!-- Page Navigation links ends -->
+        <!-- Mobile header -->
+        <button class="hidden humberger hide-desk navbar-toggler postion-fixed mt-3 toggler-example " type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <!-- mobile header ends  -->
+    </header>
+    <main>
+        <!-- ----------- Home --------  -->
+        <section id ="home" class="home p-0">
             <div class="text">
                 <h3 class="py-2 my-2">"Hello! Sharing world"</h3>
                 <h1 class="text-bg fw-bold p-1">CREATIVE COMMONS <br>

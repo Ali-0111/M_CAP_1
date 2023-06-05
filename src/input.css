@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Puritan:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  font-family: 'Lato', sans-serif;
+}
 
 .container {
   @apply w-[80%] mx-auto;
@@ -9,7 +15,7 @@
 /* ******************** popup section *************/
 
 .popup {
-  @apply w-[100vw] h-[100vh] fixed t-0 z-10 bg-gray-300;
+  @apply w-[100vw] h-[100vh] fixed top-0 z-10 bg-gray-300;
 }
 
 .popup-content {
@@ -30,4 +36,10 @@
 
 .span-2 {
   @apply origin-top-left -rotate-45 translate-x-[6%] translate-y-[422%];
+}
+
+.home {
+  background:
+    linear-gradient(#272a31, transparent),
+    url("../assests/img/landing-page.jpg");
 }

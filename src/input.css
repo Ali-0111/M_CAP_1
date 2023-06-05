@@ -43,3 +43,9 @@ html {
     linear-gradient(#272a31, transparent),
     url("../assests/img/landing-page.jpg");
 }
+
+.bag-for-txt {
+  background: url("../assests/img/redbg.png") no-repeat center /cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

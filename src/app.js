@@ -152,7 +152,7 @@ function createChevronBtn() {
 function navToMain() {
   // section tag will be a child inside main tag
   const navContainer = document.createElement('section');
-  navContainer.classList = 'popup demo';
+  navContainer.classList = 'popup hide-pop';
   const wrapper = document.createElement('div');
   wrapper.className = 'popup-content';
 

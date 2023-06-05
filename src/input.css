@@ -3,35 +3,20 @@
 @tailwind utilities;
 
 .container {
-  width: 80%;
-  margin: auto;
+  @apply w-[80%] mx-auto;
 }
 
 /* ******************** popup section *************/
 
 .popup {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  background-color: rgba(211, 211, 211, 0.8);
-  z-index: 5;
+  @apply w-[100vw] h-[100vh] fixed t-0 z-10 bg-gray-300;
 }
 
 .popup-content {
-  margin-top: 0;
-  height: 100%;
-  width: 65%;
-  margin-right: auto;
-  background-color: rgb(39, 42, 49);
+  @apply h-full w-[65%] mr-auto bg-gray-500;
 }
 
-.humberger2 {
-  font-weight: bold;
-  font-size: 30px;
-}
-
-.demo {
+.hide-pop {
   @apply md:hidden;
 }
 

@@ -793,8 +793,9 @@ video {
 }
 
 .container {
+  margin-left: auto;
+  margin-right: auto;
   width: 80%;
-  margin: auto;
 }
 
 /* ******************** popup section *************/
@@ -816,13 +817,8 @@ video {
   background-color: rgb(39, 42, 49);
 }
 
-.humberger2 {
-  font-weight: bold;
-  font-size: 30px;
-}
-
 @media (min-width: 768px) {
-  .demo {
+  .hide-pop {
     display: none;
   }
 }

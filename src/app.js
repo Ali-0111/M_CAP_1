@@ -1,4 +1,4 @@
-const body = document.querySelector('body');
+const body = document.querySelector('main');
 const humberger = document.querySelector('.humberger');
 const people = document.querySelector('.people');
 const data = [
@@ -6,53 +6,130 @@ const data = [
     name: 'Oliver Rolland',
     position: 'Managing Director chez Toulouse White Biotechnology (TWB)',
     idea: 'He has recieved the Presidential Green Chemistry Award 2014 for “Farnesane: a Breakthrough Renewable Hydrocarbon for Use as Diesel and Jet Fuel” ',
-    picture: './img/profiles/person2.jpeg',
-    pattern: './img/chess.jpg',
+    picture: '../assests/img/profiles/person2.jpeg',
+    pattern: '../assests/img/chess.jpg',
   },
   {
     name: 'Irina Borodina',
     position: 'Professor, Novo Nordisk Foundation Center for Biosustainability',
     idea: 'Research interests: Metabolic Engineering, Synthetic Biology, Industrial Biotechnology',
-    picture: './img/profiles/person3.jpeg',
-    pattern: './img/chess.jpg',
+    picture: '../assests/img/profiles/person3.jpeg',
+    pattern: '../assests/img/chess.jpg',
   },
   {
     name: 'Greg De Temmerman',
     position: 'Managing Director at Zenon Research. Associate Researcher at Mines Paris Tech/IHEIE',
     idea: 'Leading scientist with a demonstrated history of working in an international and challenging project environment. Author of more than 230 scientific articles',
-    picture: './img/profiles/person4.jpeg',
-    pattern: './img/chess.jpg',
+    picture: '../assests/img/profiles/person4.jpeg',
+    pattern: '../assests/img/chess.jpg',
   },
   {
     name: 'Ann Mettler',
     position: 'Vice President, Europe at Breakthrough Energy',
     idea: 'Ann Mettler is the head of the European Political Strategy Centre (EPSC), the in-house think tank of the European Commission.',
-    picture: './img/profiles/person5.jpeg',
-    pattern: './img/chess.jpg',
+    picture: '../assests/img/profiles/person5.jpeg',
+    pattern: '../assests/img/chess.jpg',
   },
   {
     name: 'Angeleki Rigos',
     position: 'President, Europe at Breakthrough Energy.',
     idea: 'Angeleki Rigos is the President of the European Political Strategy Centre (EPSC), the in-house think tank of the European Commission.',
-    picture: './img/profiles/person6.jpeg',
-    pattern: './img/chess.jpg',
+    picture: '../assests/img/profiles/person6.jpeg',
+    pattern: '../assests/img/chess.jpg',
   },
   {
     name: 'Wayne Koff',
     position: 'CEO, Human Immunome Project, Harvard T.H.',
     idea: 'Wayne Koff, PhD, is the founding president and CEO of the Human Immunome Project.AIDS Vaccine Initiative (IAVI)”',
-    picture: './img/profiles/WayneKoff.jpg',
-    pattern: './img/chess.jpg',
+    picture: '../assests/img/profiles/WayneKoff.jpg',
+    pattern: '../assests/img/chess.jpg',
   },
 ];
 
+const navigationLinks = [
+  { label: 'About', target: './pages/about.html' },
+  { label: 'Program', target: '#p' },
+  { label: 'Sponsor', target: '#s' },
+  { label: 'News', target: '#n' },
+  { label: 'Tickets', target: '#t' },
+];
 //      ------------  functions   -----------
 
-function remove(o) {
-  const humberger2 = document.querySelector('.humberger2');
-  humberger2.onclick = () => {
-    body.removeChild(o);
+function navList(navigationLinks) {
+  const nav = document.createElement('nav');
+  nav.classList.add('nav-items', 'py-2', 'text-white');
+  const ul = document.createElement('ul');
+  ul.className = 'navList';
+
+  // ul items made by iteration
+  navigationLinks.forEach(({ label, target }) => {
+    const li = document.createElement('li');
+    li.classList.add('hover:text-red-600');
+
+    const a = document.createElement('a');
+    a.setAttribute('href', target);
+    a.innerText = label;
+
+    li.appendChild(a);
+    ul.appendChild(li);
+  });
+
+  nav.appendChild(ul);
+  return nav;
+}
+
+function closeBtn() {
+  const btn = document.createElement('button');
+  btn.className = 'closeButton text-white';
+  btn.type = 'button';
+
+  // this div is shape of x inside the button
+  // it made by two spans
+
+  const div = document.createElement('div');
+  div.className = 'space-y-1 spn-wrapper';
+
+  const span1 = document.createElement('span');
+  span1.className = 'span-1 block w-8 mx-auto h-[4px] bg-white';
+
+  const span2 = document.createElement('span');
+  span2.className = 'span-2 block w-8 mx-auto h-[4px] bg-white';
+
+  div.append(span1, span2);
+  btn.appendChild(div);
+  return btn;
+}
+
+function navContent() {
+  // navContent has two section inside a div. 1: close btn 2:navigation list
+
+  const navWrapper = document.createElement('div');
+  navWrapper.className = 'container py-4';
+
+  const navCloseBtn = closeBtn();
+  const navsList = navList(navigationLinks);
+
+  navWrapper.append(navCloseBtn, navsList);
+  return navWrapper;
+}
+
+function removeFromBody(element) {
+  body.removeChild(element);
+}
+
+function addRemoveAbilityFor(target) {
+  const closeButton = document.querySelector('.closeButton');
+  closeButton.onclick = () => {
+    removeFromBody(target);
   };
+
+  const links = document.querySelectorAll('.navList li');
+
+  links.forEach((link) => {
+    link.addEventListener('click', () => {
+      removeFromBody(target);
+    });
+  });
 }
 
 // ------------- function for creatine Chevtron btn --------------
@@ -72,39 +149,23 @@ function createChevronBtn() {
   people.append(btn);
 }
 
-function createSection() {
-  const section = document.createElement('section');
-  section.classList = 'popup';
-  const divForPop = document.createElement('div');
-  divForPop.classList = 'popup-content';
-  divForPop.innerHTML = `
-    <button
-    class="humberger2 navbar-toggler postion-fixed mt-3     toggler-example " type="button">
-        <span class="span-1"></span>
-        <span class="hide"></span>
-        <span class="span-2"></span>
-    </button>
-    <nav class="links">
-    <ul>
-        <li>
-          <a href="./pages/about.html">About</a>
-        </li>
-        <li>
-          <a href="#services">Services</a>
-        </li>
-    </ul>
-    </nav>
-    `;
-  section.append(divForPop);
-  body.appendChild(section);
-  remove(section);
-  // remove by itmes clicked
-  const links = document.querySelectorAll('.links li');
-  links.forEach((link) => {
-    link.addEventListener('click', () => {
-      body.removeChild(section);
-    });
-  });
+function navToMain() {
+  // section tag will be a child inside main tag
+  const navContainer = document.createElement('section');
+  navContainer.classList = 'popup demo';
+  const wrapper = document.createElement('div');
+  wrapper.className = 'popup-content';
+
+  // a wrapper div for nav content
+  wrapper.appendChild(navContent());
+
+  // navContent inside section tag by a wrapper
+  navContainer.append(wrapper);
+
+  body.appendChild(navContainer);
+
+  // remevo feature for navContainer
+  addRemoveAbilityFor(navContainer);
 }
 
 // --------- function for creatine chevetron collapse menu ---
@@ -182,7 +243,7 @@ function speackersDesk() {
 }
 // ---------------------- events -----------------------
 humberger.onclick = () => {
-  createSection();
+  navToMain();
 };
 
 window.onload = () => {

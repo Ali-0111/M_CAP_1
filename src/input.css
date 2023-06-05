@@ -6,3 +6,43 @@
   width: 80%;
   margin: auto;
 }
+
+/* ******************** popup section *************/
+
+.popup {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-color: rgba(211, 211, 211, 0.8);
+  z-index: 5;
+}
+
+.popup-content {
+  margin-top: 0;
+  height: 100%;
+  width: 65%;
+  margin-right: auto;
+  background-color: rgb(39, 42, 49);
+}
+
+.humberger2 {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.demo {
+  @apply md:hidden;
+}
+
+.spn-wrapper {
+  @apply pt-1 w-10 h-10;
+}
+
+.span-1 {
+  @apply origin-top-left rotate-45 translate-x-[16%] translate-y-[50%];
+}
+
+.span-2 {
+  @apply origin-top-left -rotate-45 translate-x-[6%] translate-y-[422%];
+}

@@ -20,7 +20,7 @@ html {
 }
 
 .popup-content {
-  @apply h-full w-[65%] mr-auto bg-gray-500;
+  @apply h-full w-[65%] pl-[5%] mr-auto bg-gray-500 font-bold;
 }
 
 .hide-pop {

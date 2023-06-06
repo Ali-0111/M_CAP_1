@@ -558,10 +558,6 @@ video {
   }
 }
 
-.fixed{
-  position: fixed;
-}
-
 .absolute{
   position: absolute;
 }
@@ -592,10 +588,6 @@ video {
 
 .z-20{
   z-index: 20;
-}
-
-.z-10{
-  z-index: 10;
 }
 
 .m-0{
@@ -650,6 +642,10 @@ video {
 
 .mt-8{
   margin-top: 2rem;
+}
+
+.mr-auto{
+  margin-right: auto;
 }
 
 .block{
@@ -801,6 +797,10 @@ video {
   width: 100%;
 }
 
+.w-\[65\%\]{
+  width: 65%;
+}
+
 @keyframes spin{
   to{
     transform: rotate(360deg);
@@ -929,11 +929,6 @@ video {
   background-color: rgb(236 82 66 / var(--tw-bg-opacity));
 }
 
-.bg-gray-600{
-  --tw-bg-opacity: 1;
-  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
-}
-
 .bg-hnd-bg\/30{
   background-color: rgb(211 211 211 / 0.3);
 }
@@ -955,25 +950,13 @@ video {
   background-color: rgb(255 255 255 / 0.1);
 }
 
-.bg-white\/30{
-  background-color: rgb(255 255 255 / 0.3);
-}
-
 .bg-white\/80{
   background-color: rgb(255 255 255 / 0.8);
 }
 
-.bg-slate-500\/80{
-  background-color: rgb(100 116 139 / 0.8);
-}
-
-.bg-white\/90{
-  background-color: rgb(255 255 255 / 0.9);
-}
-
-.bg-gray-400{
+.bg-gray-500{
   --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
 }
 
 .bg-cover{
@@ -1055,6 +1038,10 @@ video {
 
 .pt-2{
   padding-top: 0.5rem;
+}
+
+.pl-\[5\%\]{
+  padding-left: 5%;
 }
 
 .text-left{
@@ -1164,11 +1151,6 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.drop-shadow-2xl{
-  --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
 .backdrop-blur-md{
   --tw-backdrop-blur: blur(12px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
@@ -1216,6 +1198,8 @@ html {
   width: 65%;
   --tw-bg-opacity: 1;
   background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+  padding-left: 5%;
+  font-weight: 700;
 }
 
 @media (min-width: 768px){
@@ -1370,12 +1354,9 @@ html {
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
-  .max-md\:bg-transparent{
-    background-color: transparent;
-  }
-
-  .max-md\:bg-none{
-    background-image: none;
+  .max-md\:bg-custom-gray{
+    --tw-bg-opacity: 1;
+    background-color: rgb(39 42 49 / var(--tw-bg-opacity));
   }
 
   .max-md\:px-2{

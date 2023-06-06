@@ -558,12 +558,20 @@ video {
   }
 }
 
+.fixed{
+  position: fixed;
+}
+
 .absolute{
   position: absolute;
 }
 
 .relative{
   position: relative;
+}
+
+.sticky{
+  position: sticky;
 }
 
 .bottom-0{
@@ -580,6 +588,10 @@ video {
 
 .top-0{
   top: 0px;
+}
+
+.z-20{
+  z-index: 20;
 }
 
 .m-0{
@@ -939,6 +951,18 @@ video {
   background-color: rgb(255 255 255 / 0.1);
 }
 
+.bg-white\/30{
+  background-color: rgb(255 255 255 / 0.3);
+}
+
+.bg-white\/80{
+  background-color: rgb(255 255 255 / 0.8);
+}
+
+.bg-slate-500\/80{
+  background-color: rgb(100 116 139 / 0.8);
+}
+
 .bg-cover{
   background-size: cover;
 }
@@ -1117,9 +1141,14 @@ video {
 }
 
 .shadow-custom-shadow{
-  --tw-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.16);
-  --tw-shadow-colored: 0 2px 5px 1px var(--tw-shadow-color);
+  --tw-shadow: 0 8px 20px 1px rgba(64, 60, 67, 0.16);
+  --tw-shadow-colored: 0 8px 20px 1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.drop-shadow-xl{
+  --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .backdrop-blur-md{
@@ -1136,6 +1165,7 @@ video {
 
 html {
   font-family: 'Lato', sans-serif;
+  scroll-behavior: smooth;
 }
 
 .wrapper{
@@ -1214,10 +1244,6 @@ html {
   background:
     url('../assests/img/programs.jpg'),
     linear-gradient(#d3d3d3, transparent);
-}
-
-.visited\:text-red-600:visited{
-  color: rgb(220 38 38 );
 }
 
 .hover\:scale-\[1\.2\]:hover{
@@ -1341,9 +1367,9 @@ html {
     line-height: 2.25rem;
   }
 
-  .max-md\:text-lg{
-    font-size: 1.125rem;
-    line-height: 1.75rem;
+  .max-md\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .max-md\:text-sm{
@@ -1354,11 +1380,6 @@ html {
   .max-md\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .max-md\:text-base{
-    font-size: 1rem;
-    line-height: 1.5rem;
   }
 
   .max-md\:leading-5{

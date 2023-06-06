@@ -9,7 +9,7 @@ module.exports = {
         'hnd-bg': '#d3d3d3',
       },
       boxShadow: {
-        'custom-shadow': '0 2px 5px 1px rgba(64, 60, 67, 0.16)',
+        'custom-shadow': '0 8px 20px 1px rgba(64, 60, 67, 0.16)',
       },
       animation: {
         'spin-slow': 'spin 10s linear infinite',

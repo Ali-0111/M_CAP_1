@@ -1,5 +1,5 @@
 const body = document.querySelector('main');
-const humberger = document.querySelector('.humberger');
+const humberger = document.querySelector('.humberger-btn');
 const people = document.querySelector('.people');
 const data = [
   {

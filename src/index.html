@@ -16,57 +16,56 @@
 <body>
     <!-- header of the page -->
     <header class="main-head shadow-custom-shadow max-md:shadow-none">
-        <!-- Desktop header starts -->
-        <div class="desktop-header max-md:hidden">
-            <!-- social media links -->   
-            <nav class="social-media bg-custom-gray text-white">
+        <div class="desktop-header max-md:hidden">  
+            <nav class="social-media-nav bg-custom-gray text-white">
                 <div class="wrapper flex justify-end">
                     <ul class="social-media-list w-[30%] max-lg:w-[45%] flex justify-between items-center py-2">
-                        <li class="hover:scale-[1.2]">
-                            <a href="#home">
-                                <img src="../assests/icons/facebook.svg" alt="facebook">
+                        <li>
+                            <a href="https://www.facebook.com/alisafari01/" target="_blank">
+                                <img class="hover:scale-[1.2]" src="../assests/icons/facebook.svg" alt="facebook">
                             </a>
                         </li>
-                        <li  class="hover:scale-[1.2]">
-                            <a href="#">
-                                <img src="../assests/icons/twitter.svg" alt="twitter">
+                        <li>
+                            <a href="https://twitter.com/qurban_safari" target="_blank">
+                                <img class="hover:scale-[1.2]" src="../assests/icons/twitter.svg" alt="twitter">
                             </a>
                         </li>
                         <li><a class="hover:underline" href="#">English</a></li>
-                        <li><a class="hover:underline" href="#">My Page</a></li>  
+                        <li><a class="hover:underline" href="https://ali-0111.github.io/My_Portfolio/" target="_blank">My Page</a></li>  
                         <li><a class="hover:underline" href="#">Log out</a></li>  
                     </ul>
                 </div>
             </nav>
-        <!-- social media links ends  -->
-        <!-- Page Navigation links starts -->
-            <nav class="nav-items py-2">
+            <nav class="nav-main py-2">
                 <div class="wrapper">
                     <ul class="flex justify-between items-center">
                         <li class="w-[30%]">
-                            <a href="#home">
+                            <a href="#home" title="Home">
                                 <div class="w-[50px] h-[50px] hover:animate-bounce">
                                     <img class="rounded-full w-full h-full" src="../assests/img/logo/travelly.png" alt="travelly-logo">
                                 </div>
                             </a>
                         </li>
-                        <li class="hover:text-red-600">
-                            <a href="./pages/about.html">About</a>
+                        <li>
+                            <a class="visited:text-red-600 hover:text-red-600" href="./pages/about.html">About</a>
                         </li>
-                        <li class="hover:text-red-600">
-                            <a href="#program">Program</a>
+                        <li>
+                            <a class="visited:text-red-600 hover:text-red-600" href="#program">Program</a>
                         </li>
-                        <li class="hover:text-red-600"><a href="#team">Team</a></li>
-                        <li class="hover:text-red-600"><a href="#partner">Partner</a></li>
-                        <li class="hover:text-red-600"><a href="#news">News</a></li>
+                        <li>
+                            <a class="visited:text-red-600 hover:text-red-600"  href="#team">Team</a>
+                        </li>
+                        <li>
+                            <a class="visited:text-red-600 hover:text-red-600" href="#partner">Partner</a>
+                        </li>
+                        <li class="border-4 border-red-500 text-red-600 py-1 px-8"><a href="#news">News</a></li>
                     </ul>
                 </div>
             </nav>     
         </div>
-        <!-- Page Navigation links ends -->
         <!-- Desktop header ends -->
         <!-- Mobile header -->
-        <button class="hidden max-md:block humberger" type="button">
+        <button class="hidden max-md:block humberger-btn">
             <div class="space-y-1 p-1">
                 <span class="block w-8 h-[4px] bg-gray-600"></span>
                 <span class="block w-8 h-[4px] bg-gray-600"></span>

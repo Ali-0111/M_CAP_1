@@ -50,12 +50,10 @@ const navigationLinks = [
   { label: 'About', target: './pages/about.html' },
   { label: 'Program', target: '#program' },
   { label: 'Team', target: '#team' },
-  { label: 'Partner', target: '#partner' },
-  { label: 'News', target: '#n' },
-  { label: 'Tickets', target: '#t' },
 ];
-//      ------------  functions   -----------
 
+//      ------------  functions   -----------
+// ------------- Child-1 for navContent
 function navList(navigationLinks) {
   const nav = document.createElement('nav');
   nav.classList.add('nav-items', 'py-2', 'text-white');
@@ -78,7 +76,7 @@ function navList(navigationLinks) {
   nav.appendChild(ul);
   return nav;
 }
-
+// ------------- Child-2 for navContent
 function closeBtn() {
   const btn = document.createElement('button');
   btn.className = 'closeButton text-white';
@@ -133,23 +131,6 @@ function addRemoveAbilityFor(target) {
   });
 }
 
-// ------------- function for creatine Chevtron btn --------------
-function createChevronBtn() {
-  const btn = document.createElement('div');
-  btn.classList = 'w-100 hide-desk';
-  btn.innerHTML = `
-          <button class="d-flex border bg-white w-100 py-3 my-3 fs-2 justify-content-center"
-                      type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"
-                      >
-                          Expand or Minimize
-                          <svg class="p mx-2" width="16" height="28"  fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                          </svg>
-                  </button>
-      `;
-  people.append(btn);
-}
-
 function navToMain() {
   // section tag will be a child inside main tag
   const navContainer = document.createElement('section');
@@ -169,6 +150,8 @@ function navToMain() {
   addRemoveAbilityFor(navContainer);
 }
 
+// codes for speakers data
+// ------------- Child-1 for profileCreator -------
 function profilePic(ptrn, picture) {
   // needy element created
   const frame = document.createElement('div');
@@ -191,6 +174,8 @@ function profilePic(ptrn, picture) {
   frame.append(pattern, face);
   return frame;
 }
+
+// ------------- Child-2 for profileCreator -------
 
 function profileDetails(name, position, info) {
   // creating needy elements
@@ -236,18 +221,18 @@ function profileCreator(obj) {
   people.append(li);
 }
 
+// from each person, profile created
 function loadSpeakers(data) {
   data.forEach((item) => {
     profileCreator(item);
   });
 }
+
 // ---------------------- events -----------------------
 humberger.onclick = () => {
   navToMain();
 };
 
 window.onload = () => {
-  // createSpeaker();
-  // speackersDesk();
   loadSpeakers(data);
 };

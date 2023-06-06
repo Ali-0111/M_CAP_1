@@ -8,8 +8,8 @@ html {
   font-family: 'Lato', sans-serif;
 }
 
-.container {
-  @apply w-[80%] mx-auto;
+.wrapper {
+  @apply max-lg:w-[90%] w-[80%] mx-auto;
 }
 
 /* ******************** popup section *************/
@@ -48,4 +48,10 @@ html {
   background: url("../assests/img/redbg.png") no-repeat center /cover;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.program {
+  background:
+    url('../assests/img/programs.jpg'),
+    linear-gradient(#d3d3d3, transparent);
 }

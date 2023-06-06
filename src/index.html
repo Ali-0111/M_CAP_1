@@ -19,7 +19,7 @@
         <div class="desktop-header max-md:hidden">
             <!-- social media links -->   
             <nav class="social-media bg-custom-gray text-white">
-                <div class="container flex justify-end">
+                <div class="wrapper flex justify-end">
                     <ul class="social-media-list w-[30%] max-lg:w-[45%] flex justify-between items-center py-2">
                         <li class="hover:scale-[1.2]">
                             <a href="#home">
@@ -40,15 +40,19 @@
         <!-- social media links ends  -->
         <!-- Page Navigation links starts -->
             <nav class="nav-items py-2">
-                <div class="container">
+                <div class="wrapper">
                     <ul class="flex justify-between items-center">
                         <li class="w-[30%]">
                             <a href="#home">
                                 <img class="w-14"src="../assests/img/logo/travelly.png" alt="logo">
                             </a>
                         </li>
-                        <li class="hover:text-red-600"><a href="./pages/about.html">About</a></li>
-                        <li class="hover:text-red-600"><a href="#">Program</a></li>
+                        <li class="hover:text-red-600">
+                            <a href="./pages/about.html">About</a>
+                        </li>
+                        <li class="hover:text-red-600">
+                            <a href="#program">Program</a>
+                        </li>
                         <li class="hover:text-red-600"><a href="#">Join</a></li>
                         <li class="hover:text-red-600"><a href="#">Sponsor</a></li>
                         <li class="hover:text-red-600"><a href="#">News</a></li>
@@ -69,10 +73,10 @@
         </button>
         <!-- mobile header ends  -->
     </header>
-    <main>
-        <!-- ----------- Home --------  -->
-        <section id ="home" class=" home min-h-[90vh] bg-cover bg-no-repeat flex justify-center items-center">
-            <div class="container text-white space-y-2">
+    <main class="text-white">
+        <!-- -------------   Home   ---------->
+        <section id ="home" class="home min-h-[90vh] bg-cover bg-no-repeat flex justify-center items-center">
+            <div class="wrapper space-y-2">
                 <h3 class="text-4xl max-md:text-2xl  text-custom-orange">
                     "Hello! Sharing world"
                 </h3>
@@ -94,82 +98,78 @@
                 </p>
             </div>    
         </section>
-        <!-- -----------Program------------  -->
-        <section id= "about" class="about">
-            <header class="about-head my-2">
-                <h2 class="text-red-950">Main Program
-                <span class="underline my-3"></span>
-                </h2>
-            </header>
-            <ul class="cards container-fluid mt-3">
-                <li class="card1 grid-st">
-                    <div class="img">
-                        <img class="card-img" src="../assests/icons/route-solid.svg" alt="iconHere">
-                        <div class="titlePic">
-                            <h2>Short Distance</h2>
-                        </div>
-                    </div>
-                    <div class="texts w-100">
-                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi eveniet quos alias incidunt ipsum earum!
-                        </h3>
-                    </div>
-                </li>
-                <li class="card2 grid-st">
-                    <div class="img">
-                        <img class="card-img" src="../assests/icons/plane-departure-solid.svg" alt="iconHere">
-                        <div class="titlePic">
-                            <h2>Safer Flights!</h2>
-                        </div>
-                    </div>
-                    <div class="texts">
-                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi eveniet quos alias incidunt ipsum earum!
-                        </h3>
-                    </div>
-                </li>
-                <li class="card3 grid-st">
-                    <div class="img">
-                        <img class="card-img" src="../assests/icons/bed-solid.svg" alt="iconHere">
-                        <div class="titlePic">
-                            <h2>Hotel Booking</h2>
-                        </div>
-                    </div>
-                    <div class="texts">
-                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi eveniet quos alias incidunt ipsum earum!
-                        </h3>
-                    </div>
-                </li>
-                <li class="card4 grid-st">
-                    <div class="img">
-                        <img class="card-img" src="../assests/icons/ic_linkedin.svg" alt="iconHere">
-                        <div class="titlePic">
-                            <h2>24/7 online Services</h2>
-                        </div>
-                    </div>
-                    <div class="texts">
-                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi eveniet quos alias incidunt ipsum earum!
-                        </h3>
-                    </div>
-                </li>
-                <li class="card5 grid-st">
-                    <div class="img">
-                        <img class="card-img" src="../assests/icons/youtube.svg" alt="iconHere">
-                        <div class="titlePic">
-                            <h2>Online Interview</h2>
-                        </div>
-                    </div>
-                    <div class="texts">
-                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi eveniet quos alias incidunt ipsum earum!
-                        </h3>
-                    </div>
-                </li>
-            </ul>
-            <div class="w-100 p-5 text-center">
-                    <button class="rounded hide-desk end-btn">
-                        Call us for more information
-                    </button> 
-                    <button class="rounded hide-btn end-btn">
-                        SEE THE WHOLE PROGRAM
-                    </button> 
+        <!-- ------------- Home Ends --------->
+        <!-- ----------  Program ------------->
+        <section id="program" class="min-h-[80vh] program">
+            <div class="wrapper py-5 space-y-10 max-md:space-y-0">
+                <header class="h-[10%] my-2 text-center space-y-2">
+                    <h2 class="w-fit mx-auto text-3xl max-md:text-xl">
+                        Main Program
+                    </h2>
+                    <span class="w-20 max-md:w-10 mx-auto h-[2px] block bg-custom-orange"></span>
+                </header>
+                <ul class="h-[50%] cards w-full mt-3 grid grid-cols-5 max-md:grid-rows-5 max-md:grid-cols-1 gap-1">
+                    <li class="card1 cursor-pointer">
+                        <article class="backdrop-blur-md bg-slate-500/30 space-y-2 max-md:space-y-0 py-4 px-4 max-md:px-2 hover:border-2 text-center max-md:text-left h-full max-md:flex max-md:justify-between max-md:items-center">
+                            <div class="max-md:w-[50%] max-md:flex max-md:justify-evenly max-md:items-center">
+                                <img class="w-8 h-10 mx-auto max-md:mx-0" src="../assests/icons/route-solid.svg" alt="Map-way">
+                                <h2 class="text-custom-orange text-2xl max-md:text-lg font-black">
+                                    Short Distance
+                                </h2>
+                            </div>
+                            <p  class="max-md:w-[50%]">Lorem ipsum dolor sit amet, consecteturadipisicing elit. Sequi eveniet quos aliasincidunt ipsum earum!
+                            </p>
+                        </article>
+                    </li>
+                    <li class="card2 cursor-pointer">
+                        <article class="backdrop-blur-md bg-slate-500/30 space-y-2 max-md:space-y-0 py-4 px-4 max-md:px-2 hover:border-2 text-center max-md:text-left h-full   max-md:flex max-md:justify-between max-md:items-center ">
+                            <div class="max-md:w-[50%] max-md:flex max-md:justify-evenly max-md:items-center">
+                                <img class="w-8 h-10 mx-auto max-md:mx-0" src="../assests/icons/plane-departure-solid.svg" alt="iconHere">
+                                <h2 class="text-custom-orange text-2xl max-md:text-lg font-black">Safer Flights!</h2>
+                            </div>
+                            <p class="max-md:w-[50%]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi eveniet quos alias incidunt ipsum earum!
+                            </p>
+                        </article>    
+                    </li>
+                    <li class="cursor-pointer">
+                        <article class="backdrop-blur-md bg-slate-500/30 space-y-2 max-md:space-y-0 py-4 px-4 max-md:px-2 hover:border-2 text-center max-md:text-left h-full   max-md:flex max-md:justify-between max-md:items-center ">
+                            <div class="max-md:w-[50%] max-md:flex max-md:justify-evenly max-md:items-center">
+                                <img class="w-8 h-10 mx-auto max-md:mx-0" src="../assests/icons/bed-solid.svg" alt="iconHere">
+                                <h2 class="text-custom-orange text-2xl max-md:text-lg font-black">Hotel Booking</h2>
+                            </div>
+                                <p class="max-md:w-[50%]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi eveniet quos alias incidunt ipsum earum!
+                                </p>
+                        </article>
+                    </li>
+                    <li class="cursor-pointer">
+                        <article class="backdrop-blur-md bg-slate-500/30 space-y-2 max-md:space-y-0 py-4 px-4 max-md:px-2 hover:border-2 text-center max-md:text-left h-full   max-md:flex max-md:justify-between max-md:items-center">
+                            <div class="max-md:w-[50%] max-md:flex max-md:justify-evenly max-md:items-center">
+                                <img class="w-8 h-10 mx-auto max-md:mx-0" src="../assests/icons/ic_linkedin.svg" alt="iconHere">
+                                <h2 class="text-custom-orange text-2xl max-md:text-lg font-black">24/7 Services</h2>
+                            </div>
+                            <p class="max-md:w-[50%]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi eveniet quos alias incidunt ipsum earum!
+                            </p>
+                        </article>
+                    </li>
+                    <li class="cursor-pointer">
+                        <article class="backdrop-blur-md bg-slate-500/30 space-y-2 max-md:space-y-0 py-4 px-4 max-md:px-2 hover:border-2 text-center max-md:text-left h-full   max-md:flex max-md:justify-between max-md:items-center">
+                            <div class="max-md:w-[50%] max-md:flex max-md:justify-evenly max-md:items-center">
+                                <img class="w-8 h-10 mx-auto max-md:mx-0" src="../assests/icons/youtube.svg" alt="iconHere">
+                                <h2 class="text-custom-orange text-2xl max-md:text-lg font-black">Interview</h2>
+                            </div>
+                                <p class="max-md:w-[50%]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi eveniet quos alias incidunt ipsum earum!
+                                </p>
+                        </article>
+                    </li>
+                </ul>
+                <div class="w-full text-center">
+                        <button class="hidden max-md:block py-8 mt-10 w-[80%] mx-auto text-lg font-bold bg-custom-orange">
+                            Call us for more information
+                        </button> 
+                        <button class="border-b bg-transparent max-md:hidden">
+                            SEE THE WHOLE PROGRAM
+                        </button> 
+                </div>
             </div>
         </section>
         <!-- ----------------Speakers-------- -->

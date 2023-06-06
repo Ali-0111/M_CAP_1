@@ -11,6 +11,9 @@ module.exports = {
       boxShadow: {
         'custom-shadow': '0 2px 5px 1px rgba(64, 60, 67, 0.16)',
       },
+      animation: {
+        'spin-slow': 'spin 10s linear infinite',
+      },
     },
   },
   plugins: [],

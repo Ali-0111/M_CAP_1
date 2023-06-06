@@ -9,7 +9,7 @@ html {
 }
 
 .wrapper {
-  @apply max-lg:w-[90%] w-[80%] mx-auto;
+  @apply max-lg:w-[90%] w-[85%] mx-auto;
 }
 
 /* ******************** popup section *************/

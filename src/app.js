@@ -48,8 +48,9 @@ const data = [
 
 const navigationLinks = [
   { label: 'About', target: './pages/about.html' },
-  { label: 'Program', target: '#p' },
-  { label: 'Sponsor', target: '#s' },
+  { label: 'Program', target: '#program' },
+  { label: 'Team', target: '#team' },
+  { label: 'Partner', target: '#partner' },
   { label: 'News', target: '#n' },
   { label: 'Tickets', target: '#t' },
 ];

@@ -5,42 +5,42 @@ const data = [
   {
     name: 'Oliver Rolland',
     position: 'Managing Director chez Toulouse White Biotechnology (TWB)',
-    idea: 'He has recieved the Presidential Green Chemistry Award 2014 for “Farnesane: a Breakthrough Renewable Hydrocarbon for Use as Diesel and Jet Fuel” ',
+    info: 'He has recieved the Presidential Green Chemistry Award 2014 for “Farnesane: a Breakthrough Renewable Hydrocarbon for Use as Diesel and Jet Fuel” ',
     picture: '../assests/img/profiles/person2.jpeg',
     pattern: '../assests/img/chess.jpg',
   },
   {
     name: 'Irina Borodina',
     position: 'Professor, Novo Nordisk Foundation Center for Biosustainability',
-    idea: 'Research interests: Metabolic Engineering, Synthetic Biology, Industrial Biotechnology',
+    info: 'Research interests: Metabolic Engineering, Synthetic Biology, Industrial Biotechnology',
     picture: '../assests/img/profiles/person3.jpeg',
     pattern: '../assests/img/chess.jpg',
   },
   {
     name: 'Greg De Temmerman',
     position: 'Managing Director at Zenon Research. Associate Researcher at Mines Paris Tech/IHEIE',
-    idea: 'Leading scientist with a demonstrated history of working in an international and challenging project environment. Author of more than 230 scientific articles',
+    info: 'Leading scientist with a demonstrated history of working in an international and challenging project environment. Author of more than 230 scientific articles',
     picture: '../assests/img/profiles/person4.jpeg',
     pattern: '../assests/img/chess.jpg',
   },
   {
     name: 'Ann Mettler',
     position: 'Vice President, Europe at Breakthrough Energy',
-    idea: 'Ann Mettler is the head of the European Political Strategy Centre (EPSC), the in-house think tank of the European Commission.',
+    info: 'Ann Mettler is the head of the European Political Strategy Centre (EPSC), the in-house think tank of the European Commission.',
     picture: '../assests/img/profiles/person5.jpeg',
     pattern: '../assests/img/chess.jpg',
   },
   {
     name: 'Angeleki Rigos',
     position: 'President, Europe at Breakthrough Energy.',
-    idea: 'Angeleki Rigos is the President of the European Political Strategy Centre (EPSC), the in-house think tank of the European Commission.',
+    info: 'Angeleki Rigos is the President of the European Political Strategy Centre (EPSC), the in-house think tank of the European Commission.',
     picture: '../assests/img/profiles/person6.jpeg',
     pattern: '../assests/img/chess.jpg',
   },
   {
     name: 'Wayne Koff',
     position: 'CEO, Human Immunome Project, Harvard T.H.',
-    idea: 'Wayne Koff, PhD, is the founding president and CEO of the Human Immunome Project.AIDS Vaccine Initiative (IAVI)”',
+    info: 'Wayne Koff, PhD, is the founding president and CEO of the Human Immunome Project.AIDS Vaccine Initiative (IAVI)”',
     picture: '../assests/img/profiles/WayneKoff.jpg',
     pattern: '../assests/img/chess.jpg',
   },
@@ -168,78 +168,77 @@ function navToMain() {
   addRemoveAbilityFor(navContainer);
 }
 
-// --------- function for creatine chevetron collapse menu ---
+function profilePic(ptrn, picture) {
+  // needy element created
+  const frame = document.createElement('div');
+  const pattern = document.createElement('img');
+  const face = document.createElement('img');
 
-function collpase() {
-  const div = document.createElement('div');
-  div.classList = 'collapse hide-desk';
-  div.id = 'collapseExample';
-  for (let i = 2; i < data.length; i += 1) {
-    const li = document.createElement('li');
-    li.classList = 'd-flex my-4';
-    li.innerHTML = `
-      <div class="profile position-relative d-flex justfify-content-center align-items-center">
-                          <img class="img1 position-absolute top-0 left-0" src="${data[i].pattern}" alt="chessPattern">
-                          <img class="img2 mt-2 ms-3 z-3" src="${data[i].picture}" alt="person2">
-                      </div>
-                      <div class="idea ps-5 align-self-center">
-                              <h3 class="display-6 fw-semibold">${data[i].name}</h3>
-                          <p class="text-danger fst-italic fs-5 mb-0">${data[i].position}</p>
-                          <div class="space my-3"></div>
-                          <p class="research fs-4">
-                              ${data[i].idea}
-                          </p>
-                      </div>
-      `;
-    div.append(li);
-  }
-  people.append(div);
+  // classes added
+  frame.className = 'relative h-[150px] max-md:h-[120px] w-[25%]';
+  pattern.className = 'absolute top-0 left-0 w-[50%] h-[50%]';
+  face.className = 'absolute bottom-0 right-0 w-[93%] h-[93%]';
+
+  // images content
+  pattern.setAttribute('src', ptrn);
+  pattern.setAttribute('alt', 'chessPicture');
+
+  face.setAttribute('src', picture);
+  face.setAttribute('alt', 'Person');
+
+  // child appending
+  frame.append(pattern, face);
+  return frame;
 }
 
-function createSpeaker() {
-  for (let i = 0; i < 2; i += 1) {
-    const li = document.createElement('li');
-    li.classList = 'd-flex my-4 sz';
-    li.innerHTML = `
-    <div class="profile position-relative d-flex">
-                        <img class="img1 position-absolute top-0 left-0" src="${data[i].pattern}" alt="chessPattern">
-                        <img class="img2 mt-2 ms-3 z-3" src="${data[i].picture}" alt="person2">
-                    </div>
-                    <div class="idea ps-5 align-self-center">
-                            <h3 class="display-6 fw-semibold">${data[i].name}</h3>
-                        <p class="text-danger fst-italic fs-5 mb-0">${data[i].position}</p>
-                        <div class="space my-3"></div>
-                        <p class="research fs-4">
-                            ${data[i].idea}
-                        </p>
-                    </div>
-    `;
-    people.append(li);
-  }
-  createChevronBtn();
-  collpase();
+function profileDetails(name, position, info) {
+  // creating needy elements
+  const detailsWrapper = document.createElement('div');
+  const forName = document.createElement('h3');
+  const forPosition = document.createElement('p');
+  const span = document.createElement('span');
+  const forInfo = document.createElement('p');
+
+  // adding classes for elements
+  detailsWrapper.className = 'w-[70%] h-full text-left self-center space-y-2';
+  forName.className = 'font-bold';
+  forPosition.className = 'italic text-custom-orange';
+  forInfo.className = 'w-[80%] text-justify';
+  span.className = 'w-5 my-2 h-[2px] block bg-custom-gray/30';
+
+  // adding contents
+  forName.textContent = name;
+  forPosition.textContent = position;
+  forInfo.textContent = info;
+
+  // appending child
+  detailsWrapper.append(forName, forPosition, span, forInfo);
+  return detailsWrapper;
 }
 
-function speackersDesk() {
-  for (let i = 2; i < data.length; i += 1) {
-    const li = document.createElement('li');
-    li.classList = 'grid-speakers my-4 sz';
-    li.innerHTML = `
-      <div class="profile position-relative d-flex">
-                          <img class="img1 position-absolute top-0 left-0" src="${data[i].pattern}" alt="chessPattern">
-                          <img class="img2 mt-2 ms-3 z-3" src="${data[i].picture}" alt="person2">
-                      </div>
-                      <div class="idea ps-5 align-self-center">
-                              <h3 class="display-6 fw-semibold">${data[i].name}</h3>
-                          <p class="text-danger fst-italic fs-5 mb-0">${data[i].position}</p>
-                          <div class="space my-3"></div>
-                          <p class="research fs-4">
-                              ${data[i].idea}
-                          </p>
-                      </div>
-      `;
-    people.append(li);
-  }
+function profileCreator(obj) {
+  // arranging data from object
+  const {
+    name, position, info, pattern, picture,
+  } = obj;
+
+  // li will be created, with a simple wrapper
+  const li = document.createElement('li');
+  li.className = 'text-black max-md:leading-5 flex justify-between items-start';
+
+  // li children
+  const firstChild = profilePic(pattern, picture);
+  const secondChild = profileDetails(name, position, info);
+  li.append(firstChild, secondChild);
+
+  // li added to the ul list
+  people.append(li);
+}
+
+function loadSpeakers(data) {
+  data.forEach((item) => {
+    profileCreator(item);
+  });
 }
 // ---------------------- events -----------------------
 humberger.onclick = () => {
@@ -247,6 +246,7 @@ humberger.onclick = () => {
 };
 
 window.onload = () => {
-  createSpeaker();
-  speackersDesk();
+  // createSpeaker();
+  // speackersDesk();
+  loadSpeakers(data);
 };

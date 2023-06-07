@@ -3,8 +3,11 @@ const humberger = document.querySelector('.humberger-btn');
 
 const navigationLinks = [
   { label: 'Home', target: '../index.html' },
-  { label: 'Program', target: '#program' },
-  { label: 'Team', target: '#team' },
+  { label: 'Intro', target: '#intro' },
+  { label: 'Company', target: '#logo' },
+  { label: 'Memo', target: '#memo' },
+  { label: 'Parnter', target: '#partner' },
+  { label: 'News', target: '#news' },
 ];
 
 //      ------------  functions   -----------

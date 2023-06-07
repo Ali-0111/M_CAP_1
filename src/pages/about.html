@@ -4,193 +4,184 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
-    <link rel="stylesheet" href="../style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Freehand&display=swap" rel="stylesheet">
-    <link rel="icon" href="../icons/airplane.svg">
+    <link rel="stylesheet" href="../../dist/output.css">
+    <link rel="icon" href="../../assests/icons/airplane.svg">
     <title>Travelly | About</title>
     <meta name="description" content="Have a safe travel with us.">
 </head>
 <body>
-    <!-- --------------- section : intro -------------  -->
-    <section class="intro">
-        <header class="main-head">
-            <button class="humberger hide-desk navbar-toggler postion-fixed mt-3 toggler-example " type="button">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <nav>
-                <ul class="align-items-center hide-mob w-100 social justify-content-end my-1">
-                    <li class="mx-2 p-1">
-                        <a href="#">
-                            <img src="../icons/twitter.svg" alt="twitter">
-                        </a>
-                    </li>
-                    <li class="mx-2 p-1">
-                        <a href="#">
-                            <img src="../icons/facebook.svg" alt="facebook">
-                        </a>
-                    </li>
-                    <li class="mx-2 p-1 fs-4">
-                            <a href="#">
-                                English
+    <!-- Header for the page  -->
+    <header class="main-head shadow-custom-shadow max-md:shadow-none drop-shadow-xl max-md:drop-shadow-none bg-white/80 max-md:bg-custom-gray sticky top-0 z-20 max-md:static">
+        <div class="desktop-header max-md:hidden">  
+            <nav class="social-media-nav bg-custom-gray text-white">
+                <div class="wrapper flex justify-end">
+                    <ul class="social-media-list w-[30%] max-lg:w-[45%] flex justify-between items-center py-2">
+                        <li>
+                            <a href="https://www.facebook.com/alisafari01/" target="_blank">
+                                <img class="hover:scale-[1.2]" src="../../assests/icons/facebook.svg" alt="facebook">
                             </a>
-                    </li>
-                    <li class="mx-2 p-1 fs-4">
-                       <a href="#" class="text-white">
-                        My Page
-                       </a>
-                    </li>
-                    <li class="mx-2 p-1 fs-4">
-                        <a href="#">
-                            Log out
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="d-flex bg-white hide-mob navs align-items-center justify-content-center">
-                <div class="flex-grow-1 hide-mob py-2 logo-head  text-start">
-                    <a class="d-flex" href="#">
-                        <img class=" justify-content-start logo-head"src="../img/logo/travelly.png" alt="logo">
-                    </a>
-                </div>
-                <div class="flex-grow-1 hide-mob linklist  justify-self-end">
-                    <ul class="w-100 d-flex pt-2 justify-content-around align-items-center">
-                        <li>
-                            <a href="../index.html">Home</a>
                         </li>
                         <li>
-                            <a href="#">Program</a>
+                            <a href="https://twitter.com/qurban_safari" target="_blank">
+                                <img class="hover:scale-[1.2]" src="../../assests/icons/twitter.svg" alt="twitter">
+                            </a>
                         </li>
-                        <li>
-                            <a href="#">Join</a>
-                        </li>
-                        <li>
-                            <a href="#">Sponsor</a>
-                        </li>
-                        <li>
-                            <a href="#">News</a>
-                        </li>
-                        <li>
-                            <a href="#">Tickets</a>
-                        </li>
+                        <li><a class="hover:underline" href="#">English</a></li>
+                        <li><a class="hover:underline" href="https://ali-0111.github.io/My_Portfolio/" target="_blank">My Page</a></li>  
+                        <li><a class="hover:underline" href="#">Log out</a></li>  
                     </ul>
                 </div>
-            </div>
-        </header>
-        <div class="text text-center">
-            <h3 class="py-2 my-2 hide-desk2">"Hello! Sharing world"</h3>
-            <h1 class="normal">CREATIVE COMMONS <br>
-                GLOBAL SUMMIT 2015
-            </h1>
-            <span class="underline hide-mob mt-1 mb-3"></span>
-            <p class="p-black border text-white">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit nam, voluptatem possimus corporis minus animi? Ipsum ducimus earum delectus doloribus! Labore itaque neque laborum. Natus odio commodi officia dolorem neque.
-                corporis minus animi? Ipsum ducimus earum delectus doloribus! Labore itaque neque laborum. Natus odio commodi officia dolorem neque.
-            </p>
-            <p class="text-center fs-4 p-2">
-                Please contact us per Email for any further questions <br>
-                about Travelly flights! <br>
-                travelly@gmail.com
-            </p>
+            </nav>
+            <nav class="nav-main py-2 text-lg">
+                <div class="wrapper">
+                    <ul class="flex justify-between items-center">
+                        <li class="w-[30%]">
+                            <a href="#home" title="Home">
+                                <div class="w-[50px] h-[50px] hover:animate-bounce">
+                                    <img class="rounded-full w-full h-full" src="../../assests/img/logo/travelly.png" alt="travelly-logo">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-red-600" href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-red-600" href="#program">Program</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-red-600"  href="#team">Team</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-red-600" href="#partner">Partner</a>
+                        </li>
+                        <li"><a class="border-4 border-red-500 text-red-600 py-1 px-8" href="#news">News</a></li>
+                    </ul>
+                </div>
+            </nav>     
         </div>
-    </section>
-    <!-- ------------------section : logo -------------------->
-    <section class="logo">
-        <div class="text-center">
-            <h1 class="display">
-                Travelly Flights Logo <br>
-                2023!
-            </h1>
-            <span class="underline my-3"></span>
-            <p class="text-center fs">
-               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates nobis doloribus dolorum nostrum perspiciatis esse.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti odio rem at dignissimos aperiam! Laborum dolorem voluptates fuga nobis earum molestiae odit inventore magnam? Minus error voluptas quaerat illum exercitationem!
-            </p>
-            <div class="title logo-pic border p-3 d-flex justify-content-center align-items-center">
-                <img class="img-fluid mx-5 logsize" src="../img/logo/travelly.png" alt="travelly-logo">
-                <div class="d-flex -content-end flex-column">
-                    <h2 class="tith2 py-2 my-1">
-                        Travelly
-                    </h2>
-                    <h3 class="py-2 my-2 fs-1">
-                        Safe Travel | Support | Enjoy<br>
-                        2023!
-                    </h3>
+        <!-- Desktop header ends -->
+        <!-- Mobile header -->
+        <button class="hidden max-md:block wrapper pt-2 humberger-btn">
+            <div class="space-y-1 p-1">
+                <span class="block w-8 h-[4px] bg-white"></span>
+                <span class="block w-8 h-[4px] bg-white"></span>
+                <span class="block w-8 h-[4px] bg-white"></span>
+            </div>
+        </button>
+        <!-- mobile header ends  -->
+    </header>
+    <main>
+        <!-- --------------- section : intro -------------  -->
+        <section class="intro">
+            <div class="text text-center">
+                <h3 class="py-2 my-2 hide-desk2">"Hello! Sharing world"</h3>
+                <h1 class="normal">CREATIVE COMMONS <br>
+                    GLOBAL SUMMIT 2015
+                </h1>
+                <span class="underline hide-mob mt-1 mb-3"></span>
+                <p class="p-black border text-white">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit nam, voluptatem possimus corporis minus animi? Ipsum ducimus earum delectus doloribus! Labore itaque neque laborum. Natus odio commodi officia dolorem neque.
+                    corporis minus animi? Ipsum ducimus earum delectus doloribus! Labore itaque neque laborum. Natus odio commodi officia dolorem neque.
+                </p>
+                <p class="text-center fs-4 p-2">
+                    Please contact us per Email for any further questions <br>
+                    about Travelly flights! <br>
+                    travelly@gmail.com
+                </p>
+            </div>
+        </section>
+        <!-- ------------------section : logo -------------------->
+        <section class="logo">
+            <div class="text-center">
+                <h1 class="display">
+                    Travelly Flights Logo <br>
+                    2023!
+                </h1>
+                <span class="underline my-3"></span>
+                <p class="text-center fs">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates nobis doloribus dolorum nostrum perspiciatis esse.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti odio rem at dignissimos aperiam! Laborum dolorem voluptates fuga nobis earum molestiae odit inventore magnam? Minus error voluptas quaerat illum exercitationem!
+                </p>
+                <div class="title logo-pic border p-3 d-flex justify-content-center align-items-center">
+                    <img class="img-fluid mx-5 logsize" src="../../assests/img/logo/travelly.png" alt="travelly-logo">
+                    <div class="d-flex -content-end flex-column">
+                        <h2 class="tith2 py-2 my-1">
+                            Travelly
+                        </h2>
+                        <h3 class="py-2 my-2 fs-1">
+                            Safe Travel | Support | Enjoy<br>
+                            2023!
+                        </h3>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- ----------------- section: memo ---------------  -->
-    <section id="memo"
-    class="mem border-top border-bottom">
-        <div class="text-center">
-            <h1 class="mem-h">
-                See the past Travelly Services
+        </section>
+        <!-- ----------------- section: memo ---------------  -->
+        <section id="memo"
+        class="mem border-top border-bottom">
+            <div class="text-center">
+                <h1 class="mem-h">
+                    See the past Travelly Services
+                </h1>
+                <span class="underline mt-1 mb-3 w-25"></span>
+                <p class="text-center fs-3 p-2">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quae itaque fugit commodi?
+                </p>
+            </div>
+            <div class="grid2">
+                <div class="w-100 exp1 my-3 position-relative">
+                    <img class="img-fluid" src="../../assests/img/memory/mem1.png" alt="mem2">
+                    <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100 position-absolute layer top-0 left-0">
+                        <h1 class="display-2 fw-semibold text-white">
+                            2022
+                        </h1>
+                        <p class="fs-4 fw-semibold text-white">
+                            Global Flights around Asia in 2022
+                        </p>
+                    </div>
+                </div>
+                <div class="w-100 exp2 position-relative my-3">
+                    <img class="img-fluid" src="../../assests/img/memory/mem2.png" alt="mem2">
+                    <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100 position-absolute layer top-0 left-0">
+                        <h1 class="display-2 fw-semibold text-white">
+                            2021
+                        </h1>
+                        <p class="fs-4 fw-semibold text-white">
+                            Global Flights around America in 2021
+                        </p>
+                    </div>
+                </div>
+            </div> 
+        </section>
+        <!-- -----------------partnerse log section  -->
+        <section class="partners py-4 d-flex flex-column ">
+            <h1 class="fs-1 text-white text-center fw-semibold py-2">
+                Partners
             </h1>
-            <span class="underline mt-1 mb-3 w-25"></span>
-            <p class="text-center fs-3 p-2">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quae itaque fugit commodi?
-            </p>
-        </div>
-        <div class="grid2">
-            <div class="w-100 exp1 my-3 position-relative">
-                <img class="img-fluid" src="../img/memory/mem1.png" alt="mem2">
-                <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100 position-absolute layer top-0 left-0">
-                    <h1 class="display-2 fw-semibold text-white">
-                        2022
-                    </h1>
-                    <p class="fs-4 fw-semibold text-white">
-                        Global Flights around Asia in 2022
-                    </p>
-                </div>
-            </div>
-            <div class="w-100 exp2 position-relative my-3">
-                <img class="img-fluid" src="../img/memory/mem2.png" alt="mem2">
-                <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100 position-absolute layer top-0 left-0">
-                    <h1 class="display-2 fw-semibold text-white">
-                        2021
-                    </h1>
-                    <p class="fs-4 fw-semibold text-white">
-                        Global Flights around America in 2021
-                    </p>
-                </div>
-            </div>
-        </div> 
-    </section>
-    <!-- -----------------partnerse log section  -->
-    <section class="partners py-4 d-flex flex-column ">
-        <h1 class="fs-1 text-white text-center fw-semibold py-2">
-            Partners
-        </h1>
-        <span class="underline mt-1 mb-3"></span>
-        <ul class="logos d-flex flex-wrap justify-content-center align-items-center">
-                <li class="w-30">
-                    <img class="col-4 img-fluid" src="../img/partners/BCG-Logo.png" alt="BCG logo">
-                </li>
-                <li class="w-30">
-                    <img class="col-4 img-fluid" src="../img/partners/GTT-logo.png" alt="GTT logo">
-                </li>
-                <li class="w-30">
-                    <img class="col-4 img-fluid" src="../img/partners/Infineon-Logo.png" alt="Infineon logo">
-                </li>
-                <li class="w-30">
-                    <img class="img-fluid" src="../img/partners/Orano-Logo.png" alt="Orano logo">
-                </li>
-                <li class="w-30">
-                    <img class="img-fluid" src="../img/partners/Loreal-Logo.png" alt="Loreal logo">
-                </li>
-        </ul>
-    </section>
+            <span class="underline mt-1 mb-3"></span>
+            <ul class="logos d-flex flex-wrap justify-content-center align-items-center">
+                    <li class="w-30">
+                        <img class="col-4 img-fluid" src="../../assests/img/partners/BCG-Logo.png" alt="BCG logo">
+                    </li>
+                    <li class="w-30">
+                        <img class="col-4 img-fluid" src="../../assests/img/partners/GTT-logo.png" alt="GTT logo">
+                    </li>
+                    <li class="w-30">
+                        <img class="col-4 img-fluid" src="../../assests/img/partners/Infineon-Logo.png" alt="Infineon logo">
+                    </li>
+                    <li class="w-30">
+                        <img class="img-fluid" src="../../assests/img/partners/Orano-Logo.png" alt="Orano logo">
+                    </li>
+                    <li class="w-30">
+                        <img class="img-fluid" src="../../assests/img/partners/Loreal-Logo.png" alt="Loreal logo">
+                    </li>
+            </ul>
+        </section>
+    </main>
     <!-- ----------------footer--------------------->
     <footer class="d-flex title justify-content-center align-items-center">
         <div class="w-50">
             <div class="footer-logo d-flex justify-content-center align-items-center">
-                <img class="w-50 bottom2 py-3" src="../img/logo/travelly.png" alt="travelly-logo">
+                <img class="w-50 bottom2 py-3" src="../../assests/img/logo/travelly.png" alt="travelly-logo">
                 <div class="d-flex justify-content-center text-center p-1 mx-2 flex-column">
                     <h2 class="fs-1 fw-semibold py-1">
                         Travelly

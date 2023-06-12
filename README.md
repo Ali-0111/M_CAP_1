@@ -5,7 +5,14 @@
   [![](https://img.shields.io/badge/Microverse-blueviolet)](https://www.microverse.org/?grsf=04r25h)
   <br/>
 </div>
+> Desktop View:
+<img src="./desktopView.jpg" width="100%" />
 
+> Mobile View:
+<div align="center">
+  <img src="./mobileView.jpg" width="100%" />
+  <br/>
+</div>
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Puritan:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: 'Lato', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  @apply max-lg:w-[90%] w-[85%] mx-auto;
+}
+
+/* ******************** popup section *************/
+
+.popup {
+  @apply w-[100vw] h-[100vh] fixed top-0 z-10 bg-gray-300;
+}
+
+.popup-content {
+  @apply h-full w-[65%] pl-[5%] mr-auto bg-gray-500 font-bold;
+}
+
+.hide-pop {
+  @apply md:hidden;
+}
+
+.spn-wrapper {
+  @apply pt-1 w-10 h-10;
+}
+
+.span-1 {
+  @apply origin-top-left rotate-45 translate-x-[16%] translate-y-[50%];
+}
+
+.span-2 {
+  @apply origin-top-left -rotate-45 translate-x-[6%] translate-y-[422%];
+}
+
+.home {
+  background:
+    linear-gradient(#272a31, transparent),
+    url("../assests/img/landing-page.jpg");
+}
+
+.bag-for-txt {
+  background: url("../assests/img/redbg.png") no-repeat center /cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.program {
+  background:
+    url('../assests/img/programs.jpg'),
+    linear-gradient(#d3d3d3, transparent);
+}

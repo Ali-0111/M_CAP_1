@@ -7,7 +7,7 @@
 </div>
 
 <div align="center">
-  <img src="./desktopView.jpg" width="50%" />
+  <img src="./desktopView.jpg" width="70%" />
 </div>
 <div align="center">
   <img src="./mobileView.jpg" width="50%" />
